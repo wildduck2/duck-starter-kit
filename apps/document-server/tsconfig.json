@@ -17,8 +17,12 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "noFallthroughCasesInSwitch": false,
+    "moduleResolution": "node",
     "paths": {
       "~/*": ["./src/*"]
-    }
+    },
+    "typeRoots": ["./types", "./node_modules/@types"],
+    "types": ["node", "express-session"],
+    "include": ["src/**/*.ts", "types"]
   }
 }

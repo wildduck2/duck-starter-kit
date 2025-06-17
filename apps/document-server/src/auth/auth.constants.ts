@@ -17,4 +17,5 @@ export const AuthError = [
 
   // NOTE: AUTH_ERROR
   'INVALID_CREDENTIALS',
+  'UNAUTHORIZED',
 ] as const

@@ -3,20 +3,22 @@ import { AppModule } from './app.module'
 import { NestExpressApplication } from '@nestjs/platform-express'
 import * as session from 'express-session'
 import { RedisStore } from 'connect-redis'
-import Redis from 'ioredis'
+import { createClient } from 'redis'
+import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger'
+import { patchNestJsSwagger } from 'nestjs-zod'
 
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule)
   app.set('query parser', 'extended')
 
-  const redisClient = new Redis({
-    host: process.env.REDIS_HOST || 'redis',
-    port: Number.parseInt(process.env.REDIS_PORT || '6379', 10),
+  const redisClient = createClient({
+    url: process.env.REDIS_URL,
   })
+  await redisClient.connect()
 
   app.use(
     session({
-      store: new RedisStore({ client: redisClient }),
+      store: new RedisStore({ client: redisClient, prefix: 'session:' }),
       secret: process.env.SESSION_SECRET || 'keyboard cat',
       resave: false,
       saveUninitialized: false,
@@ -28,6 +30,18 @@ async function bootstrap() {
     }),
   )
 
+  // Swagger
+  patchNestJsSwagger()
+  const config = new DocumentBuilder()
+    .setTitle('Cats example')
+    .setDescription('The cats API description')
+    .setVersion('1.0')
+    .addTag('cats')
+    .build()
+  const documentFactory = () => SwaggerModule.createDocument(app, config)
+  SwaggerModule.setup('api', app, documentFactory)
+
   await app.listen(process.env.PORT ?? 3000)
 }
+
 bootstrap()

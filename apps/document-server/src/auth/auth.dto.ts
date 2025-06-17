@@ -1,5 +1,6 @@
 import { z } from 'zod'
 import { AuthErrorType } from './auth.types'
+import { createZodDto } from 'nestjs-zod'
 
 const errorMessage = <T extends AuthErrorType>(message: T) => ({ message })
 
@@ -17,3 +18,6 @@ export const signupSchema = z.object({
   password: z.string().min(8, { ...errorMessage('PASSWORD_TOO_SHORT') }),
   name: z.string({ ...errorMessage('NAME_INVALID') }),
 })
+
+export class SigninDto extends createZodDto(signinSchema) {}
+export class SignupDto extends createZodDto(signupSchema) {}

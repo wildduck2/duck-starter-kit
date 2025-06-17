@@ -13,7 +13,8 @@
     "lint": "biome lint --write ./",
     "test": "vitest",
     "bench": "vitest bench",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.7",

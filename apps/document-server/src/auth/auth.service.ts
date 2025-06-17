@@ -1,8 +1,5 @@
-import { Injectable, UseFilters } from '@nestjs/common'
-import { ResponseType } from '~/common/types'
+import { Injectable } from '@nestjs/common'
 import { AuthErrorType, SigninSchemaType, SignupSchemaType } from './auth.types'
-import { AuthError } from './auth.constants'
-import { AuthExceptionFilter } from './auth-exception.filter'
 import { PasswordHasher, throwError } from '~/common/libs'
 import { InjectModel } from '@nestjs/mongoose'
 import { User } from '~/mongodb/schemas'
@@ -21,6 +18,7 @@ export class AuthService {
   async signup(body: SignupSchemaType): Promise<Omit<User, 'password'>> {
     const password = await PasswordHasher.hashPassword(body.password)
 
+    // NOTE: Hiding the password from the response
     const { password: _, ...createdUser } = await this.userModel.insertOne({
       ...body,
       password,

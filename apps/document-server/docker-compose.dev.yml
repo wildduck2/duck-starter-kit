@@ -14,10 +14,11 @@ services:
       - ../..:/app # mount whole monorepo for live updates
       - /app/node_modules # avoid overwriting node_modules
     command: pnpm --filter document-server dev
-    stdin_open: true
     tty: true
+    stdin_open: true
     depends_on:
       - mongo
+      - redis
     networks:
       - nest-net
 
@@ -35,6 +36,16 @@ services:
       - mongo-dev-data:/data/db
     networks:
       - nest-net
+  redis:
+    container_name: redis-dev
+    image: redis:7
+    restart: always
+    ports:
+      - '6380:6379'
+    networks:
+      - nest-net
+    tty: true
+    stdin_open: true
 
 volumes:
   mongo-dev-data:

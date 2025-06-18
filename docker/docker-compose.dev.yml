@@ -77,7 +77,7 @@ services:
       - bootstrap.memory_lock=true
       - xpack.security.enabled=false
       - xpack.security.audit.enabled=false
-      - ELASTIC_PASSWORD=securepassword
+      - "ES_JAVA_OPTS=-Xms4g -Xmx4g"
     ulimits:
       memlock:
         soft: -1
@@ -88,6 +88,11 @@ services:
       - "9200:9200"
     networks:
       - elk
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9200"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
 
   # --- Logstash ---
   logstash:
@@ -96,7 +101,8 @@ services:
     environment:
       - LS_JAVA_OPTS=-Xms512m -Xmx512m
     volumes:
-      - ./logstash/config:/usr/share/logstash/pipeline:ro
+      - ./logstash/config/logstash.conf:/usr/share/logstash/pipeline/logstash.conf
+    command: logstash -f /usr/share/logstash/pipeline/logstash.conf
     ports:
       - "5000:5000"
     networks:

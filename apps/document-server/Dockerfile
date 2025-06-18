@@ -1,34 +1,31 @@
-# ---------- Stage 1: Build ----------
-FROM node:22-alpine AS builder
-WORKDIR /repo
+FROM node:22-alpine
 
-RUN corepack enable
-
-# Copy everything from the monorepo root
-COPY ../../ ./
-
-# Change context to the app directory inside the container
-WORKDIR /repo/apps/document-server
-
-# Install all dependencies across the monorepo
-RUN pnpm install --no-lockfile --ignore-scripts
-
-# Build the app
-RUN pnpm build
-
-# ---------- Stage 2: Production ----------
-FROM node:20-alpine
+# Set working directory for monorepo root
 WORKDIR /app
 
+# Enable pnpm via Corepack
 RUN corepack enable
 
-# Copy compiled app and package.json only
-COPY --from=builder /repo/apps/document-server/dist ./dist
-COPY --from=builder /repo/apps/document-server/package.json ./
+# Copy monorepo root config
+COPY package.json pnpm-workspace.yaml ./
 
-# Install only production deps
-RUN pnpm install --prod --no-lockfile --ignore-scripts
+# Copy package.json files for dependency graph resolution
+COPY apps/document-server/package.json ./apps/document-server/
+COPY tooling/typescript/package.json ./packages/typescript-config/ 
 
-ENV NODE_ENV=production
-CMD ["node", "dist/main"]
+# Install all dependencies
+RUN pnpm install 
+
+# Copy full monorepo
+COPY . .
+
+# Set working dir to app
+WORKDIR /app/apps/document-server
+
+# Install all dependencies
+RUN pnpm install 
+
+EXPOSE 3000
+
+CMD ["pnpm", "run", "start:dev"]
 

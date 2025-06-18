@@ -6,9 +6,31 @@ import { RedisStore } from 'connect-redis'
 import { createClient } from 'redis'
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger'
 import { patchNestJsSwagger } from 'nestjs-zod'
+import { WinstonModule } from 'nest-winston'
+import * as winston from 'winston'
 
 async function bootstrap() {
-  const app = await NestFactory.create<NestExpressApplication>(AppModule)
+  const app = await NestFactory.create<NestExpressApplication>(AppModule, {
+    logger: WinstonModule.createLogger({
+      transports: [
+        new winston.transports.Console({
+          format: winston.format.combine(winston.format.timestamp(), winston.format.json()),
+        }),
+        new winston.transports.File({
+          filename: 'logs/combined.log',
+          format: winston.format.combine(winston.format.timestamp(), winston.format.json()),
+        }),
+        new winston.transports.Http({
+          host: 'logstash',
+          port: 5000,
+          path: '/',
+          ssl: false,
+        }),
+      ],
+      format: winston.format.combine(winston.format.timestamp(), winston.format.json()),
+    }),
+  })
+
   app.set('query parser', 'extended')
   app.setGlobalPrefix('v1')
   app.enableCors({

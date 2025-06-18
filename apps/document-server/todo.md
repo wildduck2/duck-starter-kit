@@ -12,3 +12,16 @@
 ✅ Add health checks (HEALTHCHECK in Dockerfile or x-healthcheck in docker-compose)
 
 
+
+ sudo docker build -f apps/document-server/docker/Dockerfile.dev -t test .
+
+# Rebuild
+sudo docker-compose -f docker/docker-compose.dev.yml build --no-cache
+
+# Run again
+sudo docker-compose -f docker/docker-compose.dev.yml up
+
+curl -XPOST 'http://localhost:5000' \
+  -H "Content-Type: application/json" \
+  -d '{"message":"Hello from NestJS!"}'
+

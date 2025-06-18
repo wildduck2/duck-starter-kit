@@ -39,6 +39,7 @@ export function PasswordInput({
                     type={showPassword ? 'text' : 'password'}
                     {...field}
                     disabled={mutation.isPending}
+                    placeholder="••••••••••••"
                     className="pr-10"
                   />
                   <button

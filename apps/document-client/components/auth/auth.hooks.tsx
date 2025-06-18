@@ -7,7 +7,7 @@ export function useAuth() {
   const userAtomValue = useAtomValue(userAtom)
   const router = useRouter()
 
-  if (!userAtomValue) {
+  if (userAtomValue === null) {
     router.push('/auth/signin')
   }
 

@@ -4,7 +4,7 @@ import * as React from 'react'
 import * as DialogPrimitive from '@radix-ui/react-dialog'
 import { X } from 'lucide-react'
 
-import { cn } from '@aiv/libs/cn'
+import { cn } from '@gentleduck/libs/cn'
 
 const Dialog = DialogPrimitive.Root
 

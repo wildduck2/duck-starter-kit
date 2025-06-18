@@ -1,0 +1,99 @@
+GentleDuck Colab Mono-Repo
+==========================
+
+Welcome to the GentleDuck Colab project.
+
+This repository is a modern, full-stack monorepo built for experimentation, collaboration, and
+scaling distributed systems with elegance. If you're reading this, I hope you're having a good day —
+and I promise you'll enjoy hacking on this duck, and it's built for a Microservices architecture
+with NestJS and Next.js.
+
+This project is document collaboration at its core.
+
+--------------------------
+
+Project Overview
+----------------
+
+This repo contains the following major components:
+
+- **document-server**: A NestJS-based API server (MongoDB + Redis + Elasticsearch integration).
+- **document-client**: A Next.js 15 web client (React 19).
+- **Dockerized ELK Stack**: Elasticsearch, Logstash, and Kibana.
+- **Real-time Logging**: Structured logging with Winston, piped into Logstash.
+- **MongoDB + Redis**: Dev containers ready for multi-service coordination.
+
+--------------------------
+
+Quickstart
+----------
+
+1. **Install dependencies:**
+
+   ```sh
+   pnpm install
+````
+
+2. **Start services:**
+
+   ```sh
+   # Build and start containers
+   sudo docker-compose -f docker/docker-compose.dev.yml --build
+   sudo docker-compose -f docker/docker-compose.dev.yml up -d
+   ```
+
+3. **Run the frontend:**
+
+   ```sh
+   pnpm --filter @gentleduck/document-client run dev
+   ```
+
+4. **Explore:**
+
+   * API Docs → [http://localhost:3000/docs](http://localhost:3000/docs)
+   * Elasticsearch → [http://localhost:9200](http://localhost:9200)
+   * Kibana → [http://localhost:5601](http://localhost:5601)
+   * Logstash (TCP input) → port `5000`
+
+---
+
+## Directory Structure
+
+```
+apps/
+  document-server/      # NestJS backend
+  document-client/      # Next.js frontend
+
+docker/
+  logstash/             # Logstash config & pipeline
+  docker-compose.*.yml  # Environment definitions
+
+scripts/                # Tooling (optional)
+```
+
+---
+
+## Environment Variables
+
+`.env.dev` example for backend:
+
+For local `.env` use, modify values to point to `localhost` if needed.
+
+---
+
+## Notes
+
+* **Docker is required**. Ensure you're using Docker Engine with Compose.
+* If you see port issues, check for conflicts on `3000`, `9200`, `5601`, and `5000`.
+* Logs are piped from NestJS → Winston → Logstash → Elasticsearch → Kibana.
+* MongoDB, Redis, and Elasticsearch all use dev-friendly credentials and no auth by default.
+
+---
+
+## Contributing
+
+This is a humble experiment, built to learn and grow. You’re welcome to open issues, ideas, PRs — or even better, join the discussion.
+
+---
+
+Hack the duck. 🦆

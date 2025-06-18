@@ -140,9 +140,7 @@ describe('AuthService', () => {
   /* ---------------------- signin: user not found ---------------------- */
   it('should throw if user is not found', async () => {
     mockFindOne.mockResolvedValue(null)
-
     // (throwError as Mock).mockImplementation((message: string) => new Error(message))
-    //
     // (throwError as Mock).mockReturnValue(new Error('USERNAME_INVALID'))
 
     const result = await service.signin(validInput)

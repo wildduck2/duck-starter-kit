@@ -3,7 +3,6 @@ import { Request, Response } from 'express'
 import { AuthService } from './auth.service'
 import { signinSchema, signupSchema } from './auth.dto'
 
-import { ZodValidationPipe } from '~/common/pipes'
 import { AuthExceptionFilter } from './auth-exception.filter'
 import { ResponseType } from '~/common/types'
 import { AuthGuard } from './auth.guard'
@@ -11,7 +10,7 @@ import { SessionData } from 'express-session'
 import { AuthError } from './auth.constants'
 import { throwError } from '~/common/libs'
 import SigninDto, { AuthErrorType, SignupDto } from './auth.types'
-import { createZodDto } from 'nestjs-zod'
+import { ZodValidationPipe } from '~/common/pipes'
 
 @Controller('auth')
 @UseFilters(AuthExceptionFilter)

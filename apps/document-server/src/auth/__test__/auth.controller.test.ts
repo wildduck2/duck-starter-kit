@@ -2,7 +2,6 @@ import { describe, it, expect, beforeEach, vi, afterAll, beforeAll } from 'vites
 import { AuthController } from '../auth.controller'
 import { AuthService } from '../auth.service'
 import { SignupSchemaType } from '../auth.types'
-import { signupSchema } from '../auth.dto'
 import { Test, TestingModule } from '@nestjs/testing'
 import { AuthGuard } from '../auth.guard'
 import { INestApplication } from '@nestjs/common'
@@ -123,6 +122,7 @@ describe('AuthController', () => {
     };
 
     expect(() => {
+      authController.signup(invalidBody);
     }).not.toThrow();
   });
 

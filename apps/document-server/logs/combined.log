@@ -64,3 +64,108 @@
 {"context":"MongooseModule","level":"error","message":"Unable to connect to the database. Retrying (7)...","stack":["MongooseServerSelectionError: connect ECONNREFUSED ::1:27018, connect ECONNREFUSED 127.0.0.1:27018\n    at _handleConnectionErrors (/app/node_modules/.pnpm/mongoose@8.16.0_socks@2.8.4/node_modules/mongoose/lib/connection.js:1165:11)\n    at NativeConnection.asPromise (/app/node_modules/.pnpm/mongoose@8.16.0_socks@2.8.4/node_modules/mongoose/lib/connection.js:1633:11)\n    at async <anonymous> (/app/node_modules/.pnpm/@nestjs+mongoose@11.0.3_@nestjs+common@11.1.3_class-transformer@0.5.1_class-validator@0_f0461aa04c55b07d20103e94fc00ac0d/node_modules/@nestjs/mongoose/lib/mongoose-core.module.ts:125:15)"],"timestamp":"2025-06-18T14:56:10.510Z"}
 {"context":"MongooseModule","level":"error","message":"Unable to connect to the database. Retrying (8)...","stack":["MongooseServerSelectionError: connect ECONNREFUSED ::1:27018, connect ECONNREFUSED 127.0.0.1:27018\n    at _handleConnectionErrors (/app/node_modules/.pnpm/mongoose@8.16.0_socks@2.8.4/node_modules/mongoose/lib/connection.js:1165:11)\n    at NativeConnection.asPromise (/app/node_modules/.pnpm/mongoose@8.16.0_socks@2.8.4/node_modules/mongoose/lib/connection.js:1633:11)\n    at async <anonymous> (/app/node_modules/.pnpm/@nestjs+mongoose@11.0.3_@nestjs+common@11.1.3_class-transformer@0.5.1_class-validator@0_f0461aa04c55b07d20103e94fc00ac0d/node_modules/@nestjs/mongoose/lib/mongoose-core.module.ts:125:15)"],"timestamp":"2025-06-18T14:56:43.516Z"}
 {"context":"MongooseModule","level":"error","message":"Unable to connect to the database. Retrying (9)...","stack":["MongooseServerSelectionError: connect ECONNREFUSED ::1:27018, connect ECONNREFUSED 127.0.0.1:27018\n    at _handleConnectionErrors (/app/node_modules/.pnpm/mongoose@8.16.0_socks@2.8.4/node_modules/mongoose/lib/connection.js:1165:11)\n    at NativeConnection.asPromise (/app/node_modules/.pnpm/mongoose@8.16.0_socks@2.8.4/node_modules/mongoose/lib/connection.js:1633:11)\n    at async <anonymous> (/app/node_modules/.pnpm/@nestjs+mongoose@11.0.3_@nestjs+common@11.1.3_class-transformer@0.5.1_class-validator@0_f0461aa04c55b07d20103e94fc00ac0d/node_modules/@nestjs/mongoose/lib/mongoose-core.module.ts:125:15)"],"timestamp":"2025-06-18T14:57:16.525Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2025-06-18T15:01:38.119Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2025-06-18T15:01:38.150Z"}
+{"context":"InstanceLoader","level":"info","message":"MongodbModule dependencies initialized","timestamp":"2025-06-18T15:01:38.152Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","timestamp":"2025-06-18T15:01:38.154Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2025-06-18T15:01:38.154Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-06-18T15:01:38.156Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-06-18T15:01:38.156Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseCoreModule dependencies initialized","timestamp":"2025-06-18T15:01:38.217Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","timestamp":"2025-06-18T15:01:38.223Z"}
+{"context":"InstanceLoader","level":"info","message":"AuthModule dependencies initialized","timestamp":"2025-06-18T15:01:38.224Z"}
+{"context":"RoutesResolver","level":"info","message":"AuthController {/v1/auth}:","timestamp":"2025-06-18T15:01:38.264Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/v1/auth/signin, POST} route","timestamp":"2025-06-18T15:01:38.267Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/v1/auth/signup, POST} route","timestamp":"2025-06-18T15:01:38.267Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/v1/auth/signout, GET} route","timestamp":"2025-06-18T15:01:38.273Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2025-06-18T15:01:38.275Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2025-06-18T15:06:04.361Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2025-06-18T15:06:04.388Z"}
+{"context":"InstanceLoader","level":"info","message":"MongodbModule dependencies initialized","timestamp":"2025-06-18T15:06:04.389Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","timestamp":"2025-06-18T15:06:04.389Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2025-06-18T15:06:04.389Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-06-18T15:06:04.390Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-06-18T15:06:04.390Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseCoreModule dependencies initialized","timestamp":"2025-06-18T15:06:04.450Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","timestamp":"2025-06-18T15:06:04.456Z"}
+{"context":"InstanceLoader","level":"info","message":"AuthModule dependencies initialized","timestamp":"2025-06-18T15:06:04.457Z"}
+{"context":"RoutesResolver","level":"info","message":"AuthController {/v1/auth}:","timestamp":"2025-06-18T15:06:04.505Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/v1/auth/signin, POST} route","timestamp":"2025-06-18T15:06:04.510Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/v1/auth/signup, POST} route","timestamp":"2025-06-18T15:06:04.511Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/v1/auth/signout, GET} route","timestamp":"2025-06-18T15:06:04.512Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2025-06-18T15:06:04.515Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2025-06-18T15:08:15.036Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2025-06-18T15:08:15.057Z"}
+{"context":"InstanceLoader","level":"info","message":"MongodbModule dependencies initialized","timestamp":"2025-06-18T15:08:15.058Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","timestamp":"2025-06-18T15:08:15.058Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2025-06-18T15:08:15.058Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-06-18T15:08:15.058Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-06-18T15:08:15.059Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseCoreModule dependencies initialized","timestamp":"2025-06-18T15:08:15.116Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","timestamp":"2025-06-18T15:08:15.125Z"}
+{"context":"InstanceLoader","level":"info","message":"AuthModule dependencies initialized","timestamp":"2025-06-18T15:08:15.126Z"}
+{"context":"RoutesResolver","level":"info","message":"AuthController {/v1/auth}:","timestamp":"2025-06-18T15:08:15.188Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/v1/auth/signin, POST} route","timestamp":"2025-06-18T15:08:15.195Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/v1/auth/signup, POST} route","timestamp":"2025-06-18T15:08:15.196Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/v1/auth/signout, GET} route","timestamp":"2025-06-18T15:08:15.197Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2025-06-18T15:08:15.200Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2025-06-18T15:11:29.080Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2025-06-18T15:11:29.104Z"}
+{"context":"InstanceLoader","level":"info","message":"MongodbModule dependencies initialized","timestamp":"2025-06-18T15:11:29.105Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","timestamp":"2025-06-18T15:11:29.106Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2025-06-18T15:11:29.106Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-06-18T15:11:29.107Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-06-18T15:11:29.107Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseCoreModule dependencies initialized","timestamp":"2025-06-18T15:11:29.174Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","timestamp":"2025-06-18T15:11:29.182Z"}
+{"context":"InstanceLoader","level":"info","message":"AuthModule dependencies initialized","timestamp":"2025-06-18T15:11:29.183Z"}
+{"context":"RoutesResolver","level":"info","message":"AuthController {/v1/auth}:","timestamp":"2025-06-18T15:11:29.236Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/v1/auth/signin, POST} route","timestamp":"2025-06-18T15:11:29.242Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/v1/auth/signup, POST} route","timestamp":"2025-06-18T15:11:29.243Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/v1/auth/signout, GET} route","timestamp":"2025-06-18T15:11:29.244Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2025-06-18T15:11:29.247Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2025-06-18T15:14:09.783Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2025-06-18T15:14:09.805Z"}
+{"context":"InstanceLoader","level":"info","message":"MongodbModule dependencies initialized","timestamp":"2025-06-18T15:14:09.806Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","timestamp":"2025-06-18T15:14:09.806Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2025-06-18T15:14:09.806Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-06-18T15:14:09.807Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-06-18T15:14:09.807Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseCoreModule dependencies initialized","timestamp":"2025-06-18T15:14:09.856Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","timestamp":"2025-06-18T15:14:09.862Z"}
+{"context":"InstanceLoader","level":"info","message":"AuthModule dependencies initialized","timestamp":"2025-06-18T15:14:09.863Z"}
+{"context":"RoutesResolver","level":"info","message":"AuthController {/v1/auth}:","timestamp":"2025-06-18T15:14:09.909Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/v1/auth/signin, POST} route","timestamp":"2025-06-18T15:14:09.913Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/v1/auth/signup, POST} route","timestamp":"2025-06-18T15:14:09.913Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/v1/auth/signout, GET} route","timestamp":"2025-06-18T15:14:09.914Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2025-06-18T15:14:09.916Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2025-06-18T15:15:04.993Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2025-06-18T15:15:05.018Z"}
+{"context":"InstanceLoader","level":"info","message":"MongodbModule dependencies initialized","timestamp":"2025-06-18T15:15:05.018Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","timestamp":"2025-06-18T15:15:05.019Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2025-06-18T15:15:05.019Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-06-18T15:15:05.019Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-06-18T15:15:05.019Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseCoreModule dependencies initialized","timestamp":"2025-06-18T15:15:05.068Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","timestamp":"2025-06-18T15:15:05.074Z"}
+{"context":"InstanceLoader","level":"info","message":"AuthModule dependencies initialized","timestamp":"2025-06-18T15:15:05.075Z"}
+{"context":"RoutesResolver","level":"info","message":"AuthController {/v1/auth}:","timestamp":"2025-06-18T15:15:05.122Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/v1/auth/signin, POST} route","timestamp":"2025-06-18T15:15:05.125Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/v1/auth/signup, POST} route","timestamp":"2025-06-18T15:15:05.125Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/v1/auth/signout, GET} route","timestamp":"2025-06-18T15:15:05.126Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2025-06-18T15:15:05.127Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2025-06-18T15:19:34.218Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2025-06-18T15:19:34.242Z"}
+{"context":"InstanceLoader","level":"info","message":"MongodbModule dependencies initialized","timestamp":"2025-06-18T15:19:34.242Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","timestamp":"2025-06-18T15:19:34.243Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2025-06-18T15:19:34.243Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-06-18T15:19:34.244Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2025-06-18T15:19:34.244Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseCoreModule dependencies initialized","timestamp":"2025-06-18T15:19:34.304Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","timestamp":"2025-06-18T15:19:34.310Z"}
+{"context":"InstanceLoader","level":"info","message":"AuthModule dependencies initialized","timestamp":"2025-06-18T15:19:34.310Z"}
+{"context":"RoutesResolver","level":"info","message":"AuthController {/v1/auth}:","timestamp":"2025-06-18T15:19:34.358Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/v1/auth/signin, POST} route","timestamp":"2025-06-18T15:19:34.362Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/v1/auth/signup, POST} route","timestamp":"2025-06-18T15:19:34.363Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/v1/auth/signout, GET} route","timestamp":"2025-06-18T15:19:34.364Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2025-06-18T15:19:34.366Z"}

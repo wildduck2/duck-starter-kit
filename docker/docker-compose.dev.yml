@@ -57,6 +57,9 @@ services:
     container_name: kibana
     environment:
       - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+      - ELASTICSEARCH_USERNAME=elastic2
+      - ELASTICSEARCH_PASSWORD=securepassword
+      - ELASTICSEARCH_SERVICEACCOUNT_TOKEN=AAEAAWVsYXN0aWMva2liYW5hL2tpYmFuYS1zZXJ2ZXI6dklybXktYl9UdmV1eDg4QW9hSUowZw
     ports:
       - "5601:5601"
     networks:
@@ -72,8 +75,9 @@ services:
       - node.name=elasticsearch
       - discovery.type=single-node
       - bootstrap.memory_lock=true
-      - xpack.security.enabled=false  # Disable auth for dev
+      - xpack.security.enabled=false
       - xpack.security.audit.enabled=false
+      - ELASTIC_PASSWORD=securepassword
     ulimits:
       memlock:
         soft: -1

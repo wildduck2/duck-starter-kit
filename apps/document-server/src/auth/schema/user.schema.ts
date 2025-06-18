@@ -6,10 +6,7 @@ export class User extends Document {
   @Prop({ type: String, required: true, trim: true, lowercase: true, minlength: 3, maxlength: 30 })
   username: string
 
-  @Prop({ type: String, required: true, trim: true, lowercase: true, minlength: 3, maxlength: 30 })
-  name: string
-
-  @Prop({ type: String, required: true, minlength: 8, select: false })
+  @Prop({ type: String, required: true, minlength: 8, select: true })
   password: string
 
   // match: /^[^\s@]+@[^\s@]+\.[^\s@]+$/

@@ -1,69 +1,63 @@
-import {
-  Body,
-  Controller,
-  Get,
-  HttpCode,
-  HttpStatus,
-  Post,
-  Req,
-  Res,
-  Session,
-  UseFilters,
-  UseGuards,
-} from '@nestjs/common'
+import { Body, Controller, Get, Post, Req, Res, Session, UseFilters, UseGuards } from '@nestjs/common'
 import { Request, Response } from 'express'
 import { AuthService } from './auth.service'
-import { SigninDto, signinSchema, SignupDto, signupSchema } from './auth.dto'
+import { signinSchema, signupSchema } from './auth.dto'
+
 import { ZodValidationPipe } from '~/common/pipes'
-import { SigninSchemaType, SignupSchemaType } from './auth.types'
 import { AuthExceptionFilter } from './auth-exception.filter'
 import { ResponseType } from '~/common/types'
-import { AuthGuard } from './auth.gaurd'
+import { AuthGuard } from './auth.guard'
 import { SessionData } from 'express-session'
+import { AuthError } from './auth.constants'
+import { throwError } from '~/common/libs'
+import SigninDto, { AuthErrorType, SignupDto } from './auth.types'
+import { createZodDto } from 'nestjs-zod'
 
 @Controller('auth')
 @UseFilters(AuthExceptionFilter)
 export class AuthController {
   constructor(private readonly authService: AuthService) {}
 
-  @Post('login')
-  async login(
+  @Post('signin')
+  async signin(
     @Body(new ZodValidationPipe(signinSchema)) body: SigninDto,
-    @Req() req: Request,
-    // @Session() session: SessionData,
+    @Session() session: SessionData,
     @Res({ passthrough: true }) res: Response,
-  ) {
-    // const data = await this.authService.signin(body)
-    req.session.userId = 'mock-user-id-123'
-    console.log(req.session, 'session')
+  ): Promise<ResponseType<Awaited<ReturnType<typeof this.authService.signin>>, typeof AuthError>> {
+    const data = await this.authService.signin(body)
+
+    if (data instanceof Error) {
+      throwError<AuthErrorType>('INVALID_CREDENTIALS')
+      return {
+        state: 'error',
+        error: 'INVALID_CREDENTIALS',
+        message: 'Invalid credentials',
+      }
+    }
+    session.user = data
+    console.log(session)
 
     return {
-      message: 'Logged in', //data
+      state: 'success',
+      data,
     }
   }
 
-  /**
-   * @name signup
-   * @description register a new user
-   * @method POST
-   * @route /auth/signup
-   *
-   * @param {SignupSchemaType} body
-   * @returns {Promise<ResponseType<Awaited<ReturnType<typeof this.authService.signup>>>>>}
-   */
   @Post('signup')
   async signup(
     @Body(new ZodValidationPipe(signupSchema)) body: SignupDto,
-  ): Promise<ResponseType<Awaited<ReturnType<typeof this.authService.signup>>>> {
+  ): Promise<ResponseType<Awaited<ReturnType<typeof this.authService.signup>> | Error>> {
     const data = await this.authService.signup(body)
     return { state: 'success', data }
   }
 
   @Get('signout')
   @UseGuards(AuthGuard)
-  async signout(@Session() session: SessionData) {
-    const data = await this.authService.signout()
-    console.log(session)
-    return { state: 'success', data }
+  async signout(@Req() req: Request, @Res({ passthrough: true }) res: Response) {
+    req.session.destroy((err) => {
+      console.log('session destroyed' + err)
+    })
+    res.clearCookie('connect.sid')
+    return { state: 'success', data: null }
   }
 }

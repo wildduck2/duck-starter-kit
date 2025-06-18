@@ -12,9 +12,6 @@ export const AuthError = [
   // NOTE: EMAIL_ERROR
   'EMAIL_INVALID',
 
-  // NOTE: NAME_ERROR
-  'NAME_INVALID',
-
   // NOTE: AUTH_ERROR
   'INVALID_CREDENTIALS',
   'UNAUTHORIZED',

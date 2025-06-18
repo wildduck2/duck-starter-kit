@@ -10,6 +10,14 @@ import { patchNestJsSwagger } from 'nestjs-zod'
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule)
   app.set('query parser', 'extended')
+  app.setGlobalPrefix('v1')
+  app.enableCors({
+    origin: ['http://localhost:3001', 'http://domain:3001'],
+    methods: 'GET,POST,PUT,PATCH,DELETE,OPTIONS',
+    allowedHeaders: 'Content-Type,Authorization',
+    credentials: true,
+    optionsSuccessStatus: 204,
+  })
 
   const redisClient = createClient({
     url: process.env.REDIS_URL,
@@ -21,7 +29,7 @@ async function bootstrap() {
       store: new RedisStore({ client: redisClient, prefix: 'session:' }),
       secret: process.env.SESSION_SECRET || 'keyboard cat',
       resave: false,
-      saveUninitialized: false,
+      saveUninitialized: true,
       cookie: {
         httpOnly: true,
         secure: false, // true in production with HTTPS

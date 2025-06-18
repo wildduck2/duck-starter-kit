@@ -9,10 +9,19 @@ import { User } from './schema'
 export class AuthService {
   constructor(@InjectModel(User.name) private userModel: Model<User>) {}
 
-  async signin(data: SigninSchemaType): Promise<Error> {
-    // handle signin here.
-
-    return throwError<AuthErrorType>('INVALID_CREDENTIALS')
+  async signin(data: SigninSchemaType): Promise<Awaited<Omit<User, 'password'> | Error>> {
+    const _user = await this.userModel.findOne({ username: data.username })
+    if (!_user) {
+      return throwError<AuthErrorType>('USERNAME_INVALID')
+    }
+    const passwordMatch = await PasswordHasher.comparePassword(data.password, _user.password)
+    if (!passwordMatch) {
+      return throwError<AuthErrorType>('PASSWORD_INVALID')
+    }
+    const { password: _, ...user } = _user.toObject()
+    // NOTE: i do not like casting types like this i have to reverse engineer the whole mongose type
+    // to remove the force casting here. do not forget this @wildduck
+    return user as never as Omit<User, 'password'>
   }
 
   async signup(body: SignupSchemaType): Promise<Omit<User, 'password'>> {

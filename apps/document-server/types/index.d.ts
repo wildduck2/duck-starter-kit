@@ -1,6 +1,7 @@
 import 'express-session'
+import { User } from '~/auth/schema'
 declare module 'express-session' {
   interface SessionData {
-    userId: string
+    user: Omit<User, 'password'>
   }
 }

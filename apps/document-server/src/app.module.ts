@@ -9,9 +9,12 @@ import * as winston from 'winston'
   imports: [
     WinstonModule.forRoot({
       transports: [
-        new winston.transports.Console({}),
+        new winston.transports.Console({
+          format: winston.format.combine(winston.format.timestamp(), winston.format.json()),
+        }),
         new winston.transports.File({
           filename: 'logs/combined.log',
+          format: winston.format.combine(winston.format.timestamp(), winston.format.json()),
         }),
         new winston.transports.Http({
           host: 'logstash',

@@ -1,13 +1,12 @@
 {
-  "name": "@gentleduck/tailwind-config",
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@acme/tailwind-config",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "exports": {
-    "./web": "./web.css",
-    "./base": "./base.css",
-    "./docs": "./docs.css"
-  },
+  "files": [
+    "*.css"
+  ],
   "license": "MIT",
   "scripts": {
     "clean": "rimraf dist .cache .turbo node_modules .next .velite",
@@ -15,10 +14,8 @@
     "format": "biome format --write ./",
     "lint": "biome lint --write ./"
   },
-  "dependencies": {},
-  "devDependencies": {},
-  "packageManager": "pnpm@10.10.0",
   "engines": {
     "node": ">=22.0.0"
-  }
+  },
+  "packageManager": "pnpm@10.12.4"
 }

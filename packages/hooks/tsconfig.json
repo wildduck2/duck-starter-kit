@@ -1,5 +1,5 @@
 {
-  "extends": "@gentleduck/typescript-config/internal-package.json",
+  "extends": "@acme/typescript-config/internal-package.json",
   "compilerOptions": {
     "outDir": "./dist",
     "base": "./",

@@ -12,7 +12,7 @@ import {
   type FieldPath,
   type FieldValues,
 } from 'react-hook-form'
-import { cn } from '@gentleduck/libs/cn'
+import { cn } from '@acme/libs/cn'
 import { Label } from '../label'
 
 const Form = FormProvider
@@ -99,7 +99,7 @@ function FormControl({ ...props }: React.ComponentProps<typeof Slot>) {
     <Slot
       data-slot="form-control"
       id={formItemId}
-      aria-describedby={!error ? `${formDescriptionId}` : `${formDescriptionId} ${formMessageId}`}
+      aria-describedby={error ? `${formDescriptionId} ${formMessageId}` : `${formDescriptionId}`}
       aria-invalid={!!error}
       {...props}
     />

@@ -1,5 +1,5 @@
 {
-  "name": "@gentleduck/biome-config",
+  "name": "@acme/biome-config",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -10,7 +10,7 @@
   "devDependencies": {
     "@biomejs/biome": "1.9.4"
   },
-  "packageManager": "pnpm@10.10.0",
+  "packageManager": "pnpm@10.12.4",
   "engines": {
     "node": ">=22.0.0"
   }

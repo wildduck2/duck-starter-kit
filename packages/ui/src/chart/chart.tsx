@@ -3,7 +3,7 @@
 import * as React from 'react'
 import * as RechartsPrimitive from 'recharts'
 
-import { cn } from '@gentleduck/libs/cn'
+import { cn } from '@acme/libs/cn'
 
 // Format: { THEME_NAME: CSS_SELECTOR }
 const THEMES = { light: '', dark: '.dark' } as const
@@ -206,7 +206,7 @@ const ChartTooltipContent = React.forwardRef<
                         <span className="text-muted-foreground">{itemConfig?.label || item.name}</span>
                       </div>
                       {item.value && (
-                        <span className="font-mono font-medium tabular-nums text-foreground">
+                        <span className="font-medium font-mono text-foreground tabular-nums">
                           {item.value.toLocaleString()}
                         </span>
                       )}

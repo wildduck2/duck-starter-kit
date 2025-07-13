@@ -52,10 +52,8 @@ dist
 .turbo
 .contentlayer
 tsconfig.tsbuildinfo
-__registry__
-
-
 certificates
-
 tailwind.config.ts
-
+**/logs/**
+.pnpm-store
+**/node-compile-cache/**

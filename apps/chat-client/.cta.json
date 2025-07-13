@@ -1,0 +1,12 @@
+{
+  "initialized": true,
+  "mode": "file-router",
+  "projectName": "AIV",
+  "typescript": true,
+  "tailwind": true,
+  "git": true,
+  "packageManager": "pnpm",
+  "version": 1,
+  "framework": "react-cra",
+  "chosenAddOns": ["neon", "shadcn", "start", "tanstack-query", "tRPC", "biome"]
+}

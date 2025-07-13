@@ -1,5 +1,5 @@
 {
-  "name": "@gentleduck/libs",
+  "name": "@acme/libs",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -17,15 +17,14 @@
     "publish": "pnpm run ci && changeset publish"
   },
   "devDependencies": {
-    "@gentleduck/typescript-config": "workspace:*",
+    "@acme/typescript-config": "workspace:*",
     "@types/node": "catalog:",
-    "zod": "catalog:",
-    "clsx": "^1.2.1",
-    "tailwind-merge": "^1.14.0"
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.3.1",
+    "zod": "catalog:"
   },
-  "dependencies": {},
-  "packageManager": "pnpm@10.10.0",
   "engines": {
     "node": ">=22.0.0"
-  }
+  },
+  "packageManager": "pnpm@10.12.4"
 }

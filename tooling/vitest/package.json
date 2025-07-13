@@ -1,12 +1,15 @@
 {
-  "name": "@gentleduck/vitest-config",
+  "name": "@acme/vitest-config",
   "version": "0.0.1",
   "description": "this is a package for `vitest` test configurations",
   "private": true,
   "type": "module",
   "types": "index.ts",
   "main": "index.ts",
-  "keywords": ["vitest", "vitest-config"],
+  "keywords": [
+    "vitest",
+    "vitest-config"
+  ],
   "author": "aiv",
   "license": "MIT",
   "scripts": {
@@ -16,15 +19,15 @@
     "lint": "biome lint --write ./"
   },
   "dependencies": {
-    "@vitejs/plugin-react-swc": "^3.8.0",
-    "vitest": "catalog:",
+    "@vitejs/plugin-react-swc": "^3.10.2",
+    "@vitest/coverage-v8": "catalog:",
     "@vitest/ui": "catalog:",
-    "@vitest/coverage-v8": "catalog:"
+    "vitest": "catalog:"
   },
   "devDependencies": {
-    "@gentleduck/typescript-config": "workspace:*"
+    "@acme/typescript-config": "workspace:*"
   },
-  "packageManager": "pnpm@10.10.0",
+  "packageManager": "pnpm@10.12.4",
   "engines": {
     "node": ">=22.0.0"
   }

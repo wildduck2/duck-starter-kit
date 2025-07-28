@@ -10,7 +10,7 @@
     "tsdown",
     "tsdown-config"
   ],
-  "author": "aiv",
+  "author": "acme",
   "license": "MIT",
   "scripts": {
     "clean": "git clean -xdf .cache .turbo node_modules dist",

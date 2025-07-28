@@ -5,8 +5,10 @@
   "version": "1.0.0",
   "scripts": {
     "build": "turbo build",
-    "front:dev": "docker-compose -f ./docker/docker-compose.yml up -d && pnpm run --filter=@acme/chat-client dev",
-    "back:dev": "docker-compose -f ./docker/docker-compose.yml up -d mailhog postgres redis drizzle && pnpm run --filter=@acme/chat-server start:dev",
+    "front:dev": "docker-compose -f ./docker/docker-compose.yml up -d && pnpm run --filter=@acme/acme-client dev",
+    "back:dev": "docker-compose -f ./docker/docker-compose.yml up -d acme-mailhog acme-postgres acme-redis acme-drizzle && pnpm run --filter=@acme/acme-server start:dev",
+    "docker:up": "docker-compose -f ./docker/docker-compose.yml up -d",
+    "docker:down": "docker-compose -f ./docker/docker-compose.yml down",
     "clean": "rimraf dist .cache .turbo node_modules .next .velite",
     "clean:git": "git clean -xdf .cache .turbo node_modules dist",
     "format": "biome format --write ./",

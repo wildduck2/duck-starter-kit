@@ -1,0 +1,1 @@
+ALTER TABLE "message_table" ALTER COLUMN "type" SET DEFAULT 'user';

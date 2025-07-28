@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@source "../node_modules/@acme/ui";
+@plugin "tailwindcss-animate";
+@import "@acme/tailwind-config/web.css";
+@custom-variant dark (&:is(.dark *));
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/SatoshiVF.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --acme-blue: oklch(0.49 0.23 262.33);
+}
+
+@theme inline {
+  --color-acme-blue: var(--acme-blue);
+}
+
+@layer base {
+  .acme-btn {
+    @apply bg-acme-blue hover:bg-acme-blue/80;
+  }
+}

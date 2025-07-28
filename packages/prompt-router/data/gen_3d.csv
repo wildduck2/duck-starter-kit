@@ -1,0 +1,748 @@
+prompt,tool
+"Generate a 3D model of a modern minimalist desk",gen_3d
+"Turn this architectural blueprint into a 3D building",gen_3d
+"Build a rigged human character from a textual description",gen_3d
+"Produce game-ready high-poly environment assets",gen_3d
+"Convert this medical scan data for 3D printing",gen_3d
+"Animate a character walking cycle in 3D",gen_3d
+"Enhance this 3D model with realistic textures",gen_3d
+"Generate a 3D avatar from video footage",gen_3d
+"Reconstruct a historical artifact in 3D from scans",gen_3d
+"Generate a 3D model of a vintage car",gen_3d
+"Turn this abstract drawing into a 3D sculpture",gen_3d
+"Build a rigged creature mesh for animation",gen_3d
+"Produce game-ready modular assets",gen_3d
+"Convert this point cloud data into a solid 3D model",gen_3d
+"Animate a logo reveal in 3D",gen_3d
+"Enhance this 3D model with advanced lighting",gen_3d
+"Generate a 3D avatar from a voice recording",gen_3d
+"Reconstruct an outdoor scene in 3D from drone footage",gen_3d
+"Generate a 3D model of a spaceship",gen_3d
+"Turn this technical diagram into a 3D assembly",gen_3d
+"Build a rigged vehicle model for simulation",gen_3d
+"Produce game-ready character clothing",gen_3d
+"Convert this engineering drawing into a 3D prototype",gen_3d
+"Animate a product demonstration in 3D",gen_3d
+"Enhance this 3D model for augmented reality",gen_3d
+"Generate a 3D avatar from multiple photos",gen_3d
+"Reconstruct an interior space in 3D from floor plans",gen_3d
+"Generate a 3D model of a plant",gen_3d
+"Turn this cartoon sketch into a 3D character",gen_3d
+"Build a rigged robot model for industrial design",gen_3d
+"Produce game-ready weapon models",gen_3d
+"Convert this architectural render for interactive walkthroughs",gen_3d
+"Animate a fluid simulation in 3D",gen_3d
+"Enhance this 3D model for virtual production",gen_3d
+"Generate a 3D avatar from a single selfie",gen_3d
+"Reconstruct a small object in 3D from a few images",gen_3d
+"Generate a 3D model of a complex machine part",gen_3d
+"Turn this concept art into a 3D creature",gen_3d
+"Build a rigged animal model for animation",gen_3d
+"Produce game-ready foliage and vegetation",gen_3d
+"Convert this architectural model for real-time rendering",gen_3d
+"Animate a mechanical assembly in 3D",gen_3d
+"Enhance this 3D model for photorealistic rendering",gen_3d
+"Generate a 3D avatar from a full-body scan",gen_3d
+"Reconstruct an archaeological site in 3D from lidar data",gen_3d
+"Generate a 3D model of a piece of furniture",gen_3d
+"Turn this children's drawing into a 3D toy",gen_3d
+"Build a rigged monster mesh for a game",gen_3d
+"Produce game-ready vehicles",gen_3d
+"Convert this product design into a 3D printable file",gen_3d
+"Animate a camera flythrough in 3D",gen_3d
+"Enhance this 3D model with displacement maps",gen_3d
+"Generate a 3D avatar from a passport photo",gen_3d
+"Reconstruct a geological formation in 3D from survey data",gen_3d
+"Generate a 3D model of a natural landscape feature",gen_3d
+"Turn this storyboard into a 3D animated scene",gen_3d
+"Build a rigged cartoon character",gen_3d
+"Produce game-ready buildings and structures",gen_3d
+"Convert this scientific data into a 3D visualization",gen_3d
+"Animate a particle system in 3D",gen_3d
+"Enhance this 3D model with subsurface scattering",gen_3d
+"Generate a 3D avatar from an existing 2D image",gen_3d
+"Reconstruct a damaged object in 3D for restoration",gen_3d
+"Generate a 3D model of a musical instrument",gen_3d
+"Turn this blueprint for a device into a 3D model",gen_3d
+"Build a rigged fantasy creature",gen_3d
+"Produce game-ready user interface elements in 3D",gen_3d
+"Convert this historical map into a 3D terrain",gen_3d
+"Animate a destruction sequence in 3D",gen_3d
+"Enhance this 3D model for cinematic quality",gen_3d
+"Generate a 3D avatar from a profile picture",gen_3d
+"Reconstruct a complex machine in 3D from diagrams",gen_3d
+"Generate a 3D model of a food item",gen_3d
+"Turn this abstract pattern into a 3D texture",gen_3d
+"Build a rigged non-human character",gen_3d
+"Produce game-ready collectibles",gen_3d
+"Convert this fashion design sketch into a 3D garment",gen_3d
+"Animate a product assembly in 3D",gen_3d
+"Enhance this 3D model with volumetric effects",gen_3d
+"Generate a 3D avatar from a video call screenshot",gen_3d
+"Reconstruct a human skeleton in 3D from X-rays",gen_3d
+"Generate a 3D model of a simple geometric shape",gen_3d
+"Turn this simple doodle into a 3D object",gen_3d
+"Build a rigged stylized character",gen_3d
+"Produce game-ready environmental storytelling props",gen_3d
+"Convert this anatomical drawing into a 3D organ model",gen_3d
+"Animate a water ripple effect in 3D",gen_3d
+"Enhance this 3D model with PBR materials",gen_3d
+"Generate a 3D avatar from a series of casual photos",gen_3d
+"Reconstruct a facial expression in 3D from an image",gen_3d
+"Generate a 3D model of a household appliance",gen_3d
+"Turn this scientific illustration into a 3D representation",gen_3d
+"Build a rigged creature with multiple limbs",gen_3d
+"Produce game-ready environmental obstacles",gen_3d
+"Convert this urban planning map into a 3D city model",gen_3d
+"Animate a transformation in 3D",gen_3d
+"Enhance this 3D model for mobile game optimization",gen_3d
+"Generate a 3D avatar from a police sketch",gen_3d
+"Reconstruct a plant's growth in 3D over time",gen_3d
+"Generate a 3D model of a sports equipment",gen_3d
+"Turn this abstract concept into a 3D visualization",gen_3d
+"Build a rigged bipedal creature",gen_3d
+"Produce game-ready interactable objects",gen_3d
+"Convert this geological cross-section into a 3D model",gen_3d
+"Animate a morphing object in 3D",gen_3d
+"Enhance this 3D model for virtual reality experiences",gen_3d
+"Generate a 3D avatar from a single blurry photo",gen_3d
+"Reconstruct a historical building in 3D from archival photos",gen_3d
+"Generate a 3D model of a complex electronic component",gen_3d
+"Turn this character design sheet into a 3D model",gen_3d
+"Build a rigged quadruped animal",gen_3d
+"Produce game-ready destructible objects",gen_3d
+"Convert this CAD assembly into a single 3D model for rendering",gen_3d
+"Animate a character performing an action in 3D",gen_3d
+"Enhance this 3D model for architectural visualization",gen_3d
+"Generate a 3D avatar from a hand-drawn sketch of a face",gen_3d
+"Reconstruct a small town in 3D from aerial imagery",gen_3d
+"Generate a 3D model of a common tool",gen_3d
+"Turn this landscape painting into a 3D environment",gen_3d
+"Build a rigged insect model",gen_3d
+"Produce game-ready props for interior scenes",gen_3d
+"Convert this medical imaging data into a 3D printable heart",gen_3d
+"Animate a natural phenomenon (e.g., wind, rain) in 3D",gen_3d
+"Enhance this 3D model for product configurators",gen_3d
+"Generate a 3D avatar from a silhouette",gen_3d
+"Reconstruct a specific room in 3D from a video walkthrough",gen_3d
+"Generate a 3D model of a custom piece of jewelry",gen_3d
+"Turn this children's book illustration into a 3D scene",gen_3d
+"Build a rigged mythical creature",gen_3d
+"Produce game-ready assets for a sci-fi setting",gen_3d
+"Convert this historical document into a 3D interactive exhibit",gen_3d
+"Animate a cloth simulation in 3D",gen_3d
+"Enhance this 3D model for web-based 3D viewers",gen_3d
+"Generate a 3D avatar from a low-resolution image",gen_3d
+"Reconstruct a vehicle in 3D from multiple angles of photos",gen_3d
+"Generate a 3D model of a container",gen_3d
+"Turn this technical schematic into a 3D functioning model",gen_3d
+"Build a rigged alien creature",gen_3d
+"Produce game-ready assets for a fantasy setting",gen_3d
+"Convert this archaeological artifact scan into a 3D model for study",gen_3d
+"Animate a fire effect in 3D",gen_3d
+"Enhance this 3D model for character animation pipelines",gen_3d
+"Generate a 3D avatar from a blurry selfie",gen_3d
+"Reconstruct an animal in 3D from its skeleton and reference images",gen_3d
+"Generate a 3D model of a simple building",gen_3d
+"Turn this abstract painting into a 3D rendered scene",gen_3d
+"Build a rigged quadruped character",gen_3d
+"Produce game-ready assets for a modern city",gen_3d
+"Convert this molecular structure into a 3D visualization",gen_3d
+"Animate a liquid pouring in 3D",gen_3d
+"Enhance this 3D model for architectural walkthroughs",gen_3d
+"Generate a 3D avatar from a cartoon drawing",gen_3d
+"Reconstruct a historical battle scene in 3D from descriptions",gen_3d
+"Generate a 3D model of a bridge",gen_3d
+"Turn this character concept into a 3D model for a game",gen_3d
+"Build a rigged humanoid robot",gen_3d
+"Produce game-ready assets for a futuristic setting",gen_3d
+"Convert this topographical map into a 3D landscape",gen_3d
+"Animate a smoke effect in 3D",gen_3d
+"Enhance this 3D model for product visualization",gen_3d
+"Generate a 3D avatar from a pixelated image",gen_3d
+"Reconstruct a specific type of furniture in 3D from various photos",gen_3d
+"Generate a 3D model of a tree",gen_3d
+"Turn this abstract artwork into a 3D printable object",gen_3d
+"Build a rigged avian creature",gen_3d
+"Produce game-ready assets for an urban environment",gen_3d
+"Convert this scientific diagram of a cell into a 3D model",gen_3d
+"Animate a chain reaction in 3D",gen_3d
+"Enhance this 3D model for simulation purposes",gen_3d
+"Generate a 3D avatar from a sketch of a full body",gen_3d
+"Reconstruct a historical object in 3D from incomplete data",gen_3d
+"Generate a 3D model of a specialized tool",gen_3d
+"Turn this comic book character into a 3D model",gen_3d
+"Build a rigged aquatic creature",gen_3d
+"Produce game-ready assets for a natural environment",gen_3d
+"Convert this building plan into a 3D model for virtual tours",gen_3d
+"Animate a growing plant in 3D",gen_3d
+"Enhance this 3D model for educational content",gen_3d
+"Generate a 3D avatar from a very low-resolution image",gen_3d
+"Reconstruct a specific type of plant in 3D from images",gen_3d
+"Generate a 3D model of a body part for medical study",gen_3d
+"Turn this a child's drawing of a house into a 3D model",gen_3d
+"Build a rigged creature with wings",gen_3d
+"Produce game-ready assets for a post-apocalyptic setting",gen_3d
+"Convert this scanned object into a clean, optimized 3D model",gen_3d
+"Animate a crowd simulation in 3D",gen_3d
+"Enhance this 3D model for display in museums",gen_3d
+"Generate a 3D avatar from a very old photograph",gen_3d
+"Reconstruct a small, intricate object in 3D from limited views",gen_3d
+"Generate a 3D model of a complex pipe system",gen_3d
+"Turn this character sheet with various poses into a 3D rigged model",gen_3d
+"Build a rigged character with custom accessories",gen_3d
+"Produce game-ready assets for an underwater environment",gen_3d
+"Convert this satellite image into a 3D terrain model",gen_3d
+"Animate a vehicle moving along a path in 3D",gen_3d
+"Enhance this 3D model for interactive product showcases",gen_3d
+"Generate a 3D avatar from a damaged photo",gen_3d
+"Reconstruct a large outdoor area in 3D from aerial photos and ground scans",gen_3d
+"Generate a 3D model of a statue",gen_3d
+"Turn this abstract concept into a 3D interactive exhibit",gen_3d
+"Build a rigged creature from a mythical description",gen_3d
+"Produce game-ready assets for a medieval setting",gen_3d
+"Convert this forensic scan into a 3D model of a crime scene",gen_3d
+"Animate a character's facial expressions in 3D",gen_3d
+"Enhance this 3D model for high-resolution printing",gen_3d
+"Generate a 3D avatar from a cartoon character's image",gen_3d
+"Reconstruct a complex piece of machinery in 3D from diagrams and photos",gen_3d
+"Generate a 3D model of a detailed engine",gen_3d
+"Turn this historical artifact sketch into a 3D reconstruction",gen_3d
+"Build a rigged humanoid character with specialized gear",gen_3d
+"Produce game-ready assets for a fantasy castle",gen_3d
+"Convert this archaeological site map into a 3D dig site",gen_3d
+"Animate a magical spell effect in 3D",gen_3d
+"Enhance this 3D model for real-time physics simulation",gen_3d
+"Generate a 3D avatar from a generic face image",gen_3d
+"Reconstruct a specific type of animal in 3D from various photos",gen_3d
+"Generate a 3D model of a microscopic organism",gen_3d
+"Turn this architectural concept into a 3D animated walkthrough",gen_3d
+"Build a rigged creature with unique movement patterns",gen_3d
+"Produce game-ready assets for a modern office",gen_3d
+"Convert this engineering prototype into a fully textured 3D model",gen_3d
+"Animate a character reacting to an event in 3D",gen_3d
+"Enhance this 3D model for creating visual effects (VFX)",gen_3d
+"Generate a 3D avatar from a simple profile outline",gen_3d
+"Reconstruct a specific type of building in 3D from sketches and photos",gen_3d
+"Generate a 3D model of a futuristic device",gen_3d
+"Turn this children's story illustration into a 3D animated scene",gen_3d
+"Build a rigged character for a short film",gen_3d
+"Produce game-ready assets for a post-apocalyptic city",gen_3d
+"Convert this urban planning sketch into a 3D city concept",gen_3d
+"Animate a complex mechanical device in 3D",gen_3d
+"Enhance this 3D model for augmented reality applications",gen_3d
+"Generate a 3D avatar from a side profile photo",gen_3d
+"Reconstruct a detailed landscape in 3D from satellite data and survey points",gen_3d
+"Generate a 3D model of a specific type of flower",gen_3d
+"Turn this scientific concept into a 3D educational animation",gen_3d
+"Build a rigged character with dynamic hair",gen_3d
+"Produce game-ready assets for an ancient civilization setting",gen_3d
+"Convert this forensic data into a 3D reconstruction of an incident",gen_3d
+"Animate a character interacting with an object in 3D",gen_3d
+"Enhance this 3D model for mobile device rendering",gen_3d
+"Generate a 3D avatar from a grainy video still",gen_3d
+"Reconstruct a specific type of vehicle in 3D from limited photos",gen_3d
+"Generate a 3D model of a complex circuit board",gen_3d
+"Turn this artistic rendering into a 3D sculpture",gen_3d
+"Build a rigged character with custom clothing",gen_3d
+"Produce game-ready assets for a space station interior",gen_3d
+"Convert this historical architectural drawing into a 3D building",gen_3d
+"Animate a product disassembling and reassembling in 3D",gen_3d
+"Enhance this 3D model for interactive training simulations",gen_3d
+"Generate a 3D avatar from a historical portrait",gen_3d
+"Reconstruct a specific type of natural formation in 3D from drone scans",gen_3d
+"Generate a 3D model of a complex machine assembly",gen_3d
+"Turn this abstract pattern into a 3D repeating texture",gen_3d
+"Build a rigged character with complex rigging for facial animation",gen_3d
+"Produce game-ready assets for a desert environment",gen_3d
+"Convert this medical scan data into a 3D model of a specific organ",gen_3d
+"Animate a character's idle animation in 3D",gen_3d
+"Enhance this 3D model for cinematic game cutscenes",gen_3d
+"Generate a 3D avatar from a low-quality webcam image",gen_3d
+"Reconstruct a small object in 3D from a single photograph",gen_3d
+"Generate a 3D model of a unique custom weapon",gen_3d
+"Turn this fantasy creature sketch into a 3D model",gen_3d
+"Build a rigged creature with realistic fur",gen_3d
+"Produce game-ready assets for an arctic environment",gen_3d
+"Convert this scanned artwork into a 3D relief sculpture",gen_3d
+"Animate a creature walking and running in 3D",gen_3d
+"Enhance this 3D model for interactive educational modules",gen_3d
+"Generate a 3D avatar from a blurry historical photo",gen_3d
+"Reconstruct a specific room in 3D from a panoramic photo",gen_3d
+"Generate a 3D model of a rare artifact",gen_3d
+"Turn this simple character concept into a 3D game asset",gen_3d
+"Build a rigged character for a virtual influencer",gen_3d
+"Produce game-ready assets for a tropical environment",gen_3d
+"Convert this architectural drawing into a detailed 3D model for visualization",gen_3d
+"Animate a sequence of abstract shapes transforming in 3D",gen_3d
+"Enhance this 3D model for a museum's digital archive",gen_3d
+"Generate a 3D avatar from a very pixelated image",gen_3d
+"Reconstruct a specific piece of furniture in 3D from a drawing",gen_3d
+"Generate a 3D model of a complex architectural detail",gen_3d
+"Turn this technical drawing of an engine into a 3D model",gen_3d
+"Build a rigged character for a motion capture session",gen_3d
+"Produce game-ready assets for a forest environment",gen_3d
+"Convert this scientific dataset into a 3D interactive graph",gen_3d
+"Animate a character jumping and falling in 3D",gen_3d
+"Enhance this 3D model for a product marketing campaign",gen_3d
+"Generate a 3D avatar from a partial face image",gen_3d
+"Reconstruct a specific type of building in 3D from a single photo",gen_3d
+"Generate a 3D model of a complex piece of art",gen_3d
+"Turn this abstract sculpture concept into a 3D render",gen_3d
+"Build a rigged creature with advanced physics simulation for its body parts",gen_3d
+"Produce game-ready assets for an ancient ruin setting",gen_3d
+"Convert this historical artifact scan into a 3D model with aged textures",gen_3d
+"Animate a product showcasing its features in 3D",gen_3d
+"Enhance this 3D model for a virtual reality game",gen_3d
+"Generate a 3D avatar from a low-light photograph",gen_3d
+"Reconstruct a specific historical event location in 3D from various sources",gen_3d
+"Generate a 3D model of a futuristic city landscape",gen_3d
+"Turn this children's drawing of a monster into a 3D creature",gen_3d
+"Build a rigged robot for a short animated film",gen_3d
+"Produce game-ready assets for a dystopian future setting",gen_3d
+"Convert this anatomical sketch into a 3D model of a muscle system",gen_3d
+"Animate a character performing combat moves in 3D",gen_3d
+"Enhance this 3D model for a high-end product visualization",gen_3d
+"Generate a 3D avatar from an artistic rendering of a face",gen_3d
+"Reconstruct a specific type of plant in 3D from a botanical illustration",gen_3d
+"Generate a 3D model of a customized vehicle",gen_3d
+"Turn this conceptual sketch of a new device into a 3D model",gen_3d
+"Build a rigged cartoon animal character",gen_3d
+"Produce game-ready assets for a steampunk setting",gen_3d
+"Convert this industrial design sketch into a 3D prototype",gen_3d
+"Animate a complex character interaction in 3D",gen_3d
+"Enhance this 3D model for a cinematic film production",gen_3d
+"Generate a 3D avatar from a 2D drawing of a character",gen_3d
+"Reconstruct a specific type of vehicle in 3D from a blueprint",gen_3d
+"Generate a 3D model of a detailed anatomical figure",gen_3d
+"Turn this abstract concept for an art installation into a 3D model",gen_3d
+"Build a rigged creature with realistic scales",gen_3d
+"Produce game-ready assets for a post-apocalyptic urban setting",gen_3d
+"Convert this historical photograph of a scene into a 3D diorama",gen_3d
+"Animate a complex scene with multiple characters and objects in 3D",gen_3d
+"Enhance this 3D model for real-time virtual training",gen_3d
+"Generate a 3D avatar from a very stylized illustration",gen_3d
+"Reconstruct a specific historical object in 3D from a single blurry photo",gen_3d
+"Generate a 3D model of a complex scientific instrument",gen_3d
+"Turn this character concept art into a fully textured 3D model with expressions",gen_3d
+"Build a rigged character capable of full body and facial animation",gen_3d
+"Produce game-ready assets for an underwater ruin",gen_3d
+"Convert this archaeological site's LiDAR scan into a detailed 3D model",gen_3d
+"Animate a product exploding and reassembling in 3D",gen_3d
+"Enhance this 3D model for creating highly detailed product renderings",gen_3d
+"Generate a 3D avatar from a cartoon animal picture",gen_3d
+"Reconstruct a historical building in 3D from architectural drawings",gen_3d
+"Generate a 3D model of a complex robotic arm",gen_3d
+"Turn this technical drawing into a 3D engine model",gen_3d
+"Build a rigged sci-fi creature for a game",gen_3d
+"Produce game-ready assets for a fantasy dungeon",gen_3d
+"Convert this industrial design sketch into a 3D animated prototype",gen_3d
+"Animate a product showcasing its internal mechanisms in 3D",gen_3d
+"Enhance this 3D model for broadcast quality rendering",gen_3d
+"Generate a 3D avatar from a stylized drawing",gen_3d
+"Reconstruct a historical landmark in 3D from archival photos and maps",gen_3d
+"Generate a 3D model of a futuristic weapon",gen_3d
+"Turn this abstract concept of a city into a 3D model",gen_3d
+"Build a rigged dragon model for a film",gen_3d
+"Produce game-ready props for an ancient Egyptian tomb",gen_3d
+"Convert this point cloud from a building scan into a textured 3D model",gen_3d
+"Animate a character performing acrobatics in 3D",gen_3d
+"Enhance this 3D model for interactive educational software",gen_3d
+"Generate a 3D avatar from a blurry group photo",gen_3d
+"Reconstruct a specific type of tree in 3D from photographs and botanical data",gen_3d
+"Generate a 3D model of a deep-sea submersible",gen_3d
+"Turn this conceptual art of a character's outfit into a 3D garment",gen_3d
+"Build a rigged superhero character",gen_3d
+"Produce game-ready assets for a haunted house",gen_3d
+"Convert this medical scan of a tumor into a 3D visualization for surgeons",gen_3d
+"Animate a complex mechanical transformation in 3D",gen_3d
+"Enhance this 3D model for professional product rendering",gen_3d
+"Generate a 3D avatar from a highly artistic photograph",gen_3d
+"Reconstruct a detailed architectural façade in 3D from multiple photos",gen_3d
+"Generate a 3D model of a vintage camera",gen_3d
+"Turn this abstract idea of a sound wave into a 3D visualization",gen_3d
+"Build a rigged creature with a very specific gait cycle",gen_3d
+"Produce game-ready assets for a deserted island",gen_3d
+"Convert this historical blueprint of a ship into a detailed 3D model",gen_3d
+"Animate a fantastical creature flying in 3D",gen_3d
+"Enhance this 3D model for real-time applications on low-end hardware",gen_3d
+"Generate a 3D avatar from a caricature",gen_3d
+"Reconstruct a small ecosystem in 3D from a collection of biological data",gen_3d
+"Generate a 3D model of a modular furniture system",gen_3d
+"Turn this architectural concept sketch into a 3D building rendering",gen_3d
+"Build a rigged creature for a stop-motion animation style",gen_3d
+"Produce game-ready environmental storytelling elements",gen_3d
+"Convert this engineering drawing of a turbine into a 3D functional model",gen_3d
+"Animate a product interacting with its environment in 3D",gen_3d
+"Enhance this 3D model for high-fidelity virtual reality experiences",gen_3d
+"Generate a 3D avatar from a cartoon character's concept art",gen_3d
+"Reconstruct a specific type of fossil in 3D from fragmented images",gen_3d
+"Generate a 3D model of a custom prosthetic limb",gen_3d
+"Turn this abstract concept of data flow into a 3D animated visualization",gen_3d
+"Build a rigged character with realistic hair simulation",gen_3d
+"Produce game-ready assets for a space exploration setting",gen_3d
+"Convert this medical imaging data of a brain into a 3D neurological model",gen_3d
+"Animate a character's emotional expressions in 3D",gen_3d
+"Enhance this 3D model for interactive museum exhibits",gen_3d
+"Generate a 3D avatar from a very low-resolution photograph",gen_3d
+"Reconstruct a small archaeological dig site in 3D from drone footage and ground scans",gen_3d
+"Generate a 3D model of a complex robotic component",gen_3d
+"Turn this abstract painting into a 3D immersive environment",gen_3d
+"Build a rigged creature with a unique locomotion system",gen_3d
+"Produce game-ready assets for an underwater research station",gen_3d
+"Convert this architectural render of a futuristic building into a 3D traversable space",gen_3d
+"Animate a fluid dynamics simulation for a product in 3D",gen_3d
+"Enhance this 3D model for game engine optimization",gen_3d
+"Generate a 3D avatar from a generic silhouette",gen_3d
+"Reconstruct a specific type of rock formation in 3D from geological surveys",gen_3d
+"Generate a 3D model of a classic car interior",gen_3d
+"Turn this abstract representation of a network into a 3D diagram",gen_3d
+"Build a rigged character with physically simulated clothing",gen_3d
+"Produce game-ready assets for a virtual reality training simulation",gen_3d
+"Convert this historical map into a 3D interactive historical site",gen_3d
+"Animate a character performing an extreme sport in 3D",gen_3d
+"Enhance this 3D model for photogrammetry processing",gen_3d
+"Generate a 3D avatar from a hand-drawn cartoon face",gen_3d
+"Reconstruct a full human body in 3D from medical scans (MRI, CT)",gen_3d
+"Generate a 3D model of a custom-designed drone",gen_3d
+"Turn this abstract concept of a city's energy flow into a 3D visualization",gen_3d
+"Build a rigged mythological creature",gen_3d
+"Produce game-ready assets for a medieval marketplace",gen_3d
+"Convert this product design for a smart device into a 3D interactive model",gen_3d
+"Animate a complex natural phenomenon like a tornado in 3D",gen_3d
+"Enhance this 3D model for cinematic visual effects",gen_3d
+"Generate a 3D avatar from an aged or faded photograph",gen_3d
+"Reconstruct a specific type of aircraft in 3D from blueprints and historical photos",gen_3d
+"Generate a 3D model of a customizable modular robot",gen_3d
+"Turn this abstract representation of a database into a 3D interactive model",gen_3d
+"Build a rigged character with advanced muscle simulation",gen_3d
+"Produce game-ready assets for a futuristic city environment",gen_3d
+"Convert this architectural floor plan into a 3D model for real-time walkthroughs",gen_3d
+"Animate a complex industrial process in 3D",gen_3d
+"Enhance this 3D model for high-end rendering in advertising",gen_3d
+"Generate a 3D avatar from a generic human face model",gen_3d
+"Reconstruct a complex urban intersection in 3D from street-level imagery and maps",gen_3d
+"Generate a 3D model of a fantastical creature's skeleton",gen_3d
+"Turn this abstract concept of genetic code into a 3D visualization",gen_3d
+"Build a rigged character for a virtual reality game with dynamic interactions",gen_3d
+"Produce game-ready assets for an alien planet landscape",gen_3d
+"Convert this geological survey data into a 3D subsurface model",gen_3d
+"Animate a character's complex dance routine in 3D",gen_3d
+"Enhance this 3D model for 3D printing with optimized mesh and supports",gen_3d
+"Generate a 3D avatar from a blurred, distant photo",gen_3d
+"Reconstruct a detailed interior of a historical ship in 3D from diagrams",gen_3d
+"Generate a 3D model of a historical weapon replica",gen_3d
+"Turn this abstract pattern into a 3D animated visualizer",gen_3d
+"Build a rigged monster with multiple heads and limbs",gen_3d
+"Produce game-ready assets for a haunted forest",gen_3d
+"Convert this archaeological site's drone footage into a textured 3D model for preservation",gen_3d
+"Animate a liquid flowing through a complex pipe system in 3D",gen_3d
+"Enhance this 3D model for use in architectural VR presentations",gen_3d
+"Generate a 3D avatar from a hand-drawn profile sketch",gen_3d
+"Reconstruct a specific type of vehicle in 3D from conceptual sketches",gen_3d
+"Generate a 3D model of a complex gear system",gen_3d
+"Turn this abstract concept of a data center into a 3D interactive model",gen_3d
+"Build a rigged character with detailed facial expressions and lip-syncing capabilities",gen_3d
+"Produce game-ready assets for a fantasy forest",gen_3d
+"Convert this scientific simulation data into a 3D animated visualization",gen_3d
+"Animate a character interacting with a magical spell in 3D",gen_3d
+"Enhance this 3D model for use in virtual production studios",gen_3d
+"Generate a 3D avatar from a silhouette of a person",gen_3d
+"Reconstruct a specific type of animal in 3D from fossil records and scientific descriptions",gen_3d
+"Generate a 3D model of a custom-designed piece of jewelry with intricate details",gen_3d
+"Turn this abstract concept of a microscopic world into a 3D exploration",gen_3d
+"Build a rigged creature with a very unique skeletal structure",gen_3d
+"Produce game-ready assets for a snowy mountain environment",gen_3d
+"Convert this medical scan of a heart into a 3D model for surgical planning",gen_3d
+"Animate a character's transformation from human to monster in 3D",gen_3d
+"Enhance this 3D model for real-time lighting simulations",gen_3d
+"Generate a 3D avatar from a concept art drawing of a face",gen_3d
+"Reconstruct a historical battle scene in 3D from limited eyewitness accounts",gen_3d
+"Generate a 3D model of a highly detailed historical artifact",gen_3d
+"Turn this abstract concept of a black hole into a 3D visualization",gen_3d
+"Build a rigged character for a fighting game with complex move sets",gen_3d
+"Produce game-ready assets for a ruined city environment",gen_3d
+"Convert this CAD model of a complex machine into a streamlined 3D model for VR",gen_3d
+"Animate a product showcasing its materials and textures in 3D",gen_3d
+"Enhance this 3D model for high-resolution cinematic renders",gen_3d
+"Generate a 3D avatar from a comic book character's face",gen_3d
+"Reconstruct a specific type of plant in 3D from a dried specimen and photos",gen_3d
+"Generate a 3D model of a futuristic vehicle concept",gen_3d
+"Turn this abstract pattern into a 3D textured landscape",gen_3d
+"Build a rigged creature with advanced cloth simulation for its fur/feathers",gen_3d
+"Produce game-ready assets for a fantasy village",gen_3d
+"Convert this architectural sketch into a 3D model with detailed interiors",gen_3d
+"Animate a character performing parkour moves in 3D",gen_3d
+"Enhance this 3D model for real-time shadows and reflections",gen_3d
+"Generate a 3D avatar from a generic face from a crowd",gen_3d
+"Reconstruct a specific room in 3D from a series of casual photos with occlusion",gen_3d
+"Generate a 3D model of a complex industrial pipe network",gen_3d
+"Turn this abstract concept of the human mind into a 3D visualization",gen_3d
+"Build a rigged robot for educational purposes, demonstrating its functions",gen_3d
+"Produce game-ready assets for a science laboratory",gen_3d
+"Convert this medical scan of a skeletal system into a 3D model for anatomical study",gen_3d
+"Animate a complex liquid simulation with splashes and foam in 3D",gen_3d
+"Enhance this 3D model for use in virtual reality training simulations",gen_3d
+"Generate a 3D avatar from a highly abstract self-portrait",gen_3d
+"Reconstruct a specific type of animal in 3D from limited scientific drawings",gen_3d
+"Generate a 3D model of a custom-designed robot arm for manufacturing",gen_3d
+"Turn this abstract concept of a galaxy into a 3D interactive model",gen_3d
+"Build a rigged character for a pre-rendered animated series",gen_3d
+"Produce game-ready assets for a volcanic landscape",gen_3d
+"Convert this archaeological site's survey data into a detailed 3D dig plan",gen_3d
+"Animate a character performing an emotional monologue in 3D",gen_3d
+"Enhance this 3D model for use in augmented reality marketing campaigns",gen_3d
+"Generate a 3D avatar from a stylized illustration of a person",gen_3d
+"Reconstruct a specific type of historical object in 3D from incomplete physical remnants",gen_3d
+"Generate a 3D model of a complex scientific apparatus",gen_3d
+"Turn this character concept art with different expressions into a 3D model",gen_3d
+"Build a rigged creature with a dynamic skeletal system for extreme deformations",gen_3d
+"Produce game-ready assets for a underwater city",gen_3d
+"Convert this architectural 2D plan into a 3D model with detailed interior and exterior",gen_3d
+"Animate a product disassembling and reassembling with explanations in 3D",gen_3d
+"Enhance this 3D model for realistic rendering in a virtual tour",gen_3d
+"Generate a 3D avatar from a distorted image of a face",gen_3d
+"Reconstruct a specific type of building in 3D from historical photographs and written descriptions",gen_3d
+"Generate a 3D model of a custom 3D printer",gen_3d
+"Turn this abstract concept of a brain's neural activity into a 3D visualization",gen_3d
+"Build a rigged character with advanced hand and finger articulation",gen_3d
+"Produce game-ready assets for an alien city",gen_3d
+"Convert this geological cross-section into a 3D model with realistic textures",gen_3d
+"Animate a character's complex magical abilities in 3D",gen_3d
+"Enhance this 3D model for real-time interactive simulations",gen_3d
+"Generate a 3D avatar from a profile silhouette",gen_3d
+"Reconstruct a large natural landscape in 3D from LiDAR scans and drone photogrammetry",gen_3d
+"Generate a 3D model of a detailed animal anatomy for educational purposes",gen_3d
+"Turn this abstract concept of sound waves interacting with objects into a 3D visualization",gen_3d
+"Build a rigged creature with advanced fur or feather dynamics",gen_3d
+"Produce game-ready assets for an abandoned industrial site",gen_3d
+"Convert this medical scan data of a human face into a 3D model for reconstructive surgery planning",gen_3d
+"Animate a character performing a complex task with multiple objects in 3D",gen_3d
+"Enhance this 3D model for high-fidelity real-time rendering in a game",gen_3d
+"Generate a 3D avatar from a very small, low-resolution image",gen_3d
+"Reconstruct a specific type of vehicle in 3D from limited historical descriptions",gen_3d
+"Generate a 3D model of a modern art sculpture",gen_3d
+"Turn this technical diagram of a circuit board into a 3D model",gen_3d
+"Build a rigged character with sci-fi armor for a game",gen_3d
+"Produce game-ready assets for a futuristic cityscape",gen_3d 
+"Convert this point cloud from a natural landscape into a textured 3D environment",gen_3d
+"Animate a product expanding and contracting in 3D",gen_3d
+"Enhance this 3D model for holographic display",gen_3d
+"Generate a 3D avatar from a highly detailed portrait painting",gen_3d
+"Reconstruct a historical battleground in 3D from archival maps and historical accounts",gen_3d
+"Generate a 3D model of a custom-designed robot companion",gen_3d
+"Turn this abstract painting into a 3D relief sculpture",gen_3d
+"Build a rigged mythological beast for a fantasy film",gen_3d
+"Produce game-ready props for a deserted alien planet",gen_3d
+"Convert this industrial design concept into a 3D interactive demonstration",gen_3d
+"Animate a character performing an Olympic sport in 3D",gen_3d
+"Enhance this 3D model for educational simulations in a virtual classroom",gen_3d
+"Generate a 3D avatar from a cartoon character's full body sketch",gen_3d
+"Reconstruct a specific type of marine life in 3D from scientific illustrations and photos",gen_3d
+"Generate a 3D model of a complex biological cell structure",gen_3d
+"Turn this abstract concept of a neural network into a 3D visualization",gen_3d
+"Build a rigged superhero team for a cinematic animation",gen_3d
+"Produce game-ready assets for a post-apocalyptic underground bunker",gen_3d
+"Convert this medical scan of a human heart into a pulsating 3D model for study",gen_3d
+"Animate a product transforming into a different form in 3D",gen_3d
+"Enhance this 3D model for high-resolution 3D printing with advanced materials",gen_3d
+"Generate a 3D avatar from a hand-drawn sketch with minimal detail",gen_3d
+"Reconstruct a detailed architectural interior in 3D from panoramic photos and floor plans",gen_3d
+"Generate a 3D model of a vintage radio",gen_3d
+"Turn this abstract idea of a soundscape into a 3D immersive experience",gen_3d
+"Build a rigged creature with unique biological functions for a science fiction setting",gen_3d
+"Produce game-ready assets for a bustling ancient city",gen_3d
+"Convert this historical artifact from a museum scan into a 3D interactive exhibit",gen_3d
+"Animate a fantastical creature interacting with its environment in 3D",gen_3d
+"Enhance this 3D model for real-time ray tracing in games",gen_3d
+"Generate a 3D avatar from a blurred video still of a person's face",gen_3d
+"Reconstruct a small geographical region in 3D from aerial drone maps and survey data",gen_3d
+"Generate a 3D model of a customizable modular vehicle",gen_3d
+"Turn this abstract representation of financial data into a 3D interactive visualization",gen_3d
+"Build a rigged character with physically accurate hair and cloth simulation",gen_3d
+"Produce game-ready assets for a virtual reality arcade",gen_3d
+"Convert this engineering blueprint of a bridge into a 3D structural analysis model",gen_3d
+"Animate a product exploding into its components and reassembling in 3D",gen_3d
+"Enhance this 3D model for professional architectural visualization walk-throughs",gen_3d
+"Generate a 3D avatar from a conceptual sketch of a character's face",gen_3d
+"Reconstruct a detailed human organ system in 3D from medical diagrams and scans",gen_3d
+"Generate a 3D model of a complex plant with intricate root systems",gen_3d
+"Turn this abstract concept of a virtual world into a 3D environment",gen_3d
+"Build a rigged alien creature with unique biological adaptations",gen_3d
+"Produce game-ready assets for a space station interior with modular components",gen_3d
+"Convert this scientific data of molecular interactions into a 3D animated simulation",gen_3d
+"Animate a character performing complex professional actions in 3D (e.g., surgery, piloting)",gen_3d
+"Enhance this 3D model for high-quality product configurators on websites",gen_3d
+"Generate a 3D avatar from a very pixelated image of a person",gen_3d
+"Reconstruct a large urban area in 3D from satellite imagery and city planning data",gen_3d
+"Generate a 3D model of a unique, custom-designed piece of furniture",gen_3d
+"Turn this abstract pattern into a 3D animated background for a video",gen_3d
+"Build a rigged cartoon character with squash and stretch capabilities",gen_3d
+"Produce game-ready assets for an underwater research facility",gen_3d
+"Convert this historical manuscript into a 3D interactive digital exhibit",gen_3d
+"Animate a character undergoing a significant physical transformation in 3D",gen_3d
+"Enhance this 3D model for use in professional film pre-visualization",gen_3d
+"Generate a 3D avatar from a child's drawing of a face",gen_3d
+"Reconstruct a specific type of insect in 3D from microscopic images",gen_3d
+"Generate a 3D model of a deep-sea creature",gen_3d
+"Turn this abstract idea of a city's growth into a 3D time-lapse visualization",gen_3d
+"Build a rigged bipedal creature with multiple arms for a fantasy game",gen_3d
+"Produce game-ready assets for a dystopian future city",gen_3d
+"Convert this medical scan of a skeletal deformity into a 3D model for corrective surgery planning",gen_3d
+"Animate a fluid simulation of a complex natural disaster (e.g., tsunami, volcanic eruption) in 3D",gen_3d
+"Enhance this 3D model for interactive educational content on anatomy",gen_3d
+"Generate a 3D avatar from a blurry group of faces",gen_3d
+"Reconstruct a specific type of plant in 3D from a botanical sketch and photos of its growth stages",gen_3d
+"Generate a 3D model of a modular robotic platform",gen_3d
+"Turn this abstract concept of a digital interface into a 3D interactive experience",gen_3d
+"Build a rigged character with stylized and exaggerated movements for animation",gen_3d
+"Produce game-ready assets for an ancient Roman coliseum",gen_3d
+"Convert this geological survey data into a 3D model of subsurface layers and fault lines",gen_3d
+"Animate a character performing a complex musical instrument in 3D",gen_3d
+"Enhance this 3D model for display in digital art galleries",gen_3d
+"Generate a 3D avatar from a silhouette of a cartoon character",gen_3d
+"Reconstruct a detailed historical map in 3D for an interactive exhibit",gen_3d
+"Generate a 3D model of a custom-designed prosthetics for animals",gen_3d
+"Turn this abstract representation of a complex algorithm into a 3D visualization",gen_3d
+"Build a rigged creature that can fly and swim for a fantasy world",gen_3d
+"Produce game-ready assets for a virtual reality escape room",gen_3d
+"Convert this architectural render of a historical building into a 3D interactive museum exhibit",gen_3d
+"Animate a product showcasing its design iterations in 3D",gen_3d
+"Enhance this 3D model for photorealistic rendering in product catalogs",gen_3d
+"Generate a 3D avatar from a very low-quality webcam capture",gen_3d
+"Reconstruct a specific type of vehicle in 3D from fragmented images and diagrams",gen_3d
+"Generate a 3D model of a complex machine with moving parts for a factory floor",gen_3d
+"Turn this abstract concept of a social network into a 3D interactive map",gen_3d
+"Build a rigged humanoid robot with realistic joint movements",gen_3d
+"Produce game-ready assets for a fantasy forest with interactive elements",gen_3d
+"Convert this medical imaging data of a specific bone fracture into a 3D model for surgical planning",gen_3d
+"Animate a character performing a magic spell with complex particle effects in 3D",gen_3d
+"Enhance this 3D model for real-time fluid simulation in a game engine",gen_3d
+"Generate a 3D avatar from a stylized abstract image of a face",gen_3d
+"Reconstruct a complex archaeological dig site in 3D from multi-spectral drone imagery and ground scans",gen_3d
+"Generate a 3D model of a customized vehicle for off-road exploration",gen_3d
+"Turn this abstract painting into a 3D environment for a virtual tour",gen_3d
+"Build a rigged creature with advanced fur dynamics and interaction with environment",gen_3d
+"Produce game-ready assets for a futuristic research laboratory",gen_3d
+"Convert this historical architectural plan into a 3D model with reconstruction details of missing elements",gen_3d
+"Animate a product assembling itself from individual parts in 3D",gen_3d
+"Enhance this 3D model for augmented reality product placement in real-world environments",gen_3d
+"Generate a 3D avatar from a blurry, artistic rendering of a face",gen_3d
+"Reconstruct a large natural landmark in 3D from detailed LiDAR scans and aerial photographs",gen_3d
+"Generate a 3D model of a scientific visualization of a virus",gen_3d
+"Turn this abstract concept of a thought process into a 3D animated journey",gen_3d
+"Build a rigged cartoon animal character with expressive facial rigging",gen_3d
+"Produce game-ready assets for a haunted mansion with interactive ghostly elements",gen_3d
+"Convert this medical scan of a human brain into a 3D model highlighting specific regions of activity",gen_3d
+"Animate a character interacting with a physically simulated object in 3D (e.g., pushing a heavy box)",gen_3d
+"Enhance this 3D model for use in professional animation studios for character production",gen_3d
+"Generate a 3D avatar from a distorted or abstract photograph of a person",gen_3d
+"Reconstruct a small historical village in 3D from archival photos, maps, and local accounts",gen_3d
+"Generate a 3D model of a complex architectural structure with intricate details",gen_3d
+"Turn this abstract concept of a sound wave into a 3D interactive exhibit",gen_3d
+"Build a rigged creature with realistic muscle deformation for a creature feature film",gen_3d
+"Produce game-ready assets for a post-apocalyptic wasteland",gen_3d
+"Convert this CAD design for a new product into a fully textured and rendered 3D model for marketing",gen_3d
+"Animate a product showcasing its multiple color and material options in 3D",gen_3d
+"Enhance this 3D model for use in virtual production green screen environments",gen_3d
+"Generate a 3D avatar from a very old, damaged photograph",gen_3d
+"Reconstruct a specific type of historical vehicle in 3D from limited engineering drawings and fragmented photos",gen_3d
+"Generate a 3D model of a custom-designed robot for exploration",gen_3d
+"Turn this abstract representation of a complex system into a 3D interactive diagram",gen_3d
+"Build a rigged character with advanced cloth simulation for dynamic clothing interactions",gen_3d
+"Produce game-ready assets for a modern hospital interior",gen_3d
+"Convert this medical scan of a human skull into a 3D printable model for surgical planning",gen_3d
+"Animate a character performing a complex musical performance in 3D",gen_3d
+"Enhance this 3D model for highly detailed real-time rendering in a simulation",gen_3d
+"Generate a 3D avatar from a cartoon animal character",gen_3d
+"Reconstruct a specific type of plant in 3D from detailed botanical illustrations and growth patterns",gen_3d
+"Generate a 3D model of a complex and unique piece of jewelry with gemstones",gen_3d
+"Turn this abstract concept of a cloud formation into a 3D animated visualization",gen_3d
+"Build a rigged creature with unique biological functions and sensory organs",gen_3d
+"Produce game-ready assets for a futuristic military base",gen_3d
+"Convert this archaeological site's LiDAR scan into a detailed 3D reconstruction with artifact placement",gen_3d
+"Animate a character performing a detailed craft (e.g., sculpting, painting) in 3D",gen_3d
+"Enhance this 3D model for professional rendering in a product advertisement",gen_3d
+"Generate a 3D avatar from a highly stylized artistic representation of a face",gen_3d
+"Reconstruct a complex historical machine in 3D from disassembled parts and engineering diagrams",gen_3d
+"Generate a 3D model of a futuristic weapon with moving parts",gen_3d
+"Turn this abstract concept of network security into a 3D interactive visualization",gen_3d
+"Build a rigged character for a virtual reality social platform with custom animations",gen_3d
+"Produce game-ready assets for an abandoned amusement park",gen_3d
+"Convert this medical scan of a human organ with disease indicators into a 3D diagnostic model",gen_3d
+"Animate a product showcasing its durability through simulated impact in 3D",gen_3d
+"Enhance this 3D model for use in high-end CGI productions",gen_3d
+"Generate a 3D avatar from a highly conceptual sketch of a person",gen_3d
+"Reconstruct a specific type of building in 3D from a single, slightly obscured photograph",gen_3d
+"Generate a 3D model of a custom-built computer rig with intricate internal components",gen_3d
+"Turn this abstract pattern into a 3D animated fractal visualization",gen_3d
+"Build a rigged alien creature with unique forms of communication through body language",gen_3d
+"Produce game-ready assets for a fantasy castle interior with interactive elements",gen_3d
+"Convert this historical artifact scan into a 3D model with simulated damage for restoration planning",gen_3d
+"Animate a character's complex reaction to an environmental change in 3D (e.g., adapting to strong winds)",gen_3d
+"Enhance this 3D model for real-time virtual walkthroughs of large architectural spaces",gen_3d
+"Generate a 3D avatar from a very abstract or minimalist portrait",gen_3d
+"Reconstruct a small, isolated ecosystem in 3D from environmental data and specific species information",gen_3d
+"Generate a 3D model of a complex scientific instrument for laboratory use",gen_3d
+"Turn this abstract concept of quantum physics into a 3D animated explanation",gen_3d
+"Build a rigged mythological creature with multiple forms of locomotion",gen_3d
+"Produce game-ready assets for a virtual museum exhibit",gen_3d
+"Convert this geological map into a 3D model showing geological layers and rock types",gen_3d
+"Animate a product showcasing its modularity and interchangeability of parts in 3D",gen_3d
+"Enhance this 3D model for use in virtual reality product training simulations",gen_3d
+"Generate a 3D avatar from a very low-quality, blurry photo of a face",gen_3d
+"Reconstruct a detailed historical battle or event scene in 3D from multiple historical accounts and limited visual evidence",gen_3d
+"Generate a 3D model of a custom-designed robot for educational purposes",gen_3d
+"Turn this abstract concept of artificial intelligence into a 3D interactive visualization",gen_3d
+"Build a rigged character with advanced IK/FK blending for seamless animation",gen_3d
+"Produce game-ready assets for a modern apartment interior with customizable elements",gen_3d
+"Convert this medical scan data into a 3D model of a specific body system (e.g., circulatory, nervous) for educational purposes",gen_3d
+"Animate a product showcasing its ergonomic design through user interaction in 3D",gen_3d
+"Enhance this 3D model for high-fidelity rendering of reflective and refractive materials",gen_3d
+"Generate a 3D avatar from a conceptual drawing of a full character",gen_3d
+"Reconstruct a small, complex natural formation (e.g., a cave, a unique rock outcrop) in 3D from detailed scans",gen_3d
+"Generate a 3D model of a fantastical architectural structure",gen_3d
+"Turn this abstract concept of big data into a 3D interactive data visualization",gen_3d
+"Build a rigged creature with a very unique biological defense mechanism",gen_3d
+"Produce game-ready assets for a space exploration game with diverse alien environments",gen_3d
+"Convert this architectural render of a landmark building into a 3D interactive historical tour",gen_3d
+"Animate a product's assembly line process in 3D",gen_3d
+"Enhance this 3D model for augmented reality repair and maintenance guides",gen_3d
+"Generate a 3D avatar from a stylized abstract facial drawing",gen_3d
+"Reconstruct a specific type of vehicle in 3D from its patent drawings and sparse photographic evidence",gen_3d
+"Generate a 3D model of a complex micro-electromechanical system (MEMS)",gen_3d
+"Turn this abstract pattern into a 3D animated visualizer for music",gen_3d
+"Build a rigged humanoid character with robotic enhancements for a sci-fi series",gen_3d
+"Produce game-ready assets for a post-apocalyptic cityscape with dynamic weather effects",gen_3d
+"Convert this historical artifact scan into a 3D model for virtual archaeology",gen_3d
+"Animate a character performing a complex and nuanced emotional scene in 3D",gen_3d
+"Enhance this 3D model for real-time physics-based rendering in a simulation",gen_3d
+"Generate a 3D avatar from a very low-resolution, black and white photograph",gen_3d
+"Reconstruct a large-scale disaster site in 3D from drone footage and forensic scans",gen_3d
+"Generate a 3D model of a bespoke piece of art furniture",gen_3d
+"Turn this abstract concept of renewable energy sources into a 3D interactive diagram",gen_3d
+"Build a rigged creature that can shapeshift between two forms in 3D",gen_3d
+"Produce game-ready assets for a medieval fantasy tavern",gen_3d
+"Convert this medical scan data of a specific pathology into a 3D model for diagnostic education",gen_3d
+"Animate a product showcasing its inner workings and technology in 3D",gen_3d
+"Enhance this 3D model for interactive marketing experiences on the web",gen_3d
+"Generate a 3D avatar from an artistic rendering of a character's face",gen_3d
+"Reconstruct a specific room in 3D from a series of photos taken at different times of day",gen_3d
+"Generate a 3D model of a futuristic medical device",gen_3d
+"Turn this abstract concept of a sound wave's propagation into a 3D animated visualization",gen_3d
+"Build a rigged character with custom accessories and weapon rigging for a game",gen_3d
+"Produce game-ready assets for an ancient Egyptian market scene",gen_3d
+"Convert this geological cross-section into a 3D model showing the impact of erosion over time",gen_3d
+"Animate a character performing complex professional movements (e.g., a musician playing an instrument) in 3D",gen_3d
+"Enhance this 3D model for high-quality rendering in a virtual tour of a property",gen_3d
+"Generate a 3D avatar from a conceptual drawing of a full character with unique features",gen_3d
+"Reconstruct a detailed historical street in 3D from archival photos and urban planning maps",gen_3d
+"Generate a 3D model of a complex and unique piece of industrial machinery",gen_3d
+"Turn this abstract concept of a secure network into a 3D interactive visualization",gen_3d
+"Build a rigged creature with advanced procedural animation for realistic movement",gen_3d
+"Produce game-ready assets for a space colony interior",gen_3d
+"Convert this CAD model of a complex product into an interactive 3D model for customer support",gen_3d
+"Animate a character showcasing various emotions and reactions in 3D",gen_3d
+"Enhance this 3D model for real-time rendering on a mobile augmented reality application",gen_3d
+"Generate a 3D avatar from a blurred, out-of-focus photograph of a face",gen_3d
+"Reconstruct a small but historically significant archaeological site in 3D from detailed scans and excavation records",gen_3d

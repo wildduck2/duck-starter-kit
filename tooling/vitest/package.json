@@ -10,7 +10,7 @@
     "vitest",
     "vitest-config"
   ],
-  "author": "aiv",
+  "author": "acme",
   "license": "MIT",
   "scripts": {
     "clean": "rimraf dist .cache .turbo node_modules .next .velite",

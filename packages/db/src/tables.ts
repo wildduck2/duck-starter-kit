@@ -1,5 +1,5 @@
 import { relations } from 'drizzle-orm'
-import { index, integer, jsonb, pgTable, text, timestamp, uuid, varchar } from 'drizzle-orm/pg-core'
+import { index, integer, jsonb, pgEnum, pgTable, text, timestamp, uuid, varchar } from 'drizzle-orm/pg-core'
 import { uuidv7 } from 'uuidv7'
 
 // ================================= Tables =========================================
@@ -146,18 +146,20 @@ export const llmModelsTable = pgTable('llm_models_table', {
   updatedAt: timestamp('updated_at', { withTimezone: true, precision: 0 }).notNull().defaultNow(),
 })
 
+export const messageTypeEnum = pgEnum('message_type', ['user', 'assistant', 'system'])
+
 export const messageTable = pgTable(
   'message_table',
   {
     id: uuid('id')
       .primaryKey()
       .$default(() => uuidv7()),
-    type: varchar('type', { length: 255 }).notNull(),
+    type: messageTypeEnum('type').default('user'),
     content: text('content').notNull(),
     metadata: jsonb('metadata').notNull(),
-    userId: uuid('user_id')
+    organizationId: uuid('organization_id')
       .notNull()
-      .references(() => userTable.id),
+      .references(() => organizationTable.id),
     chatId: uuid('chat_id')
       .notNull()
       .references(() => chatTable.id),
@@ -168,7 +170,7 @@ export const messageTable = pgTable(
     updatedAt: timestamp('updated_at', { withTimezone: true, precision: 0 }).notNull().defaultNow(),
   },
   (table) => ({
-    userIdIdx: index('message_user_id_idx').on(table.userId),
+    organizationIdIdx: index('message_org_id_idx').on(table.organizationId),
     chatIdIdx: index('message_chat_id_idx').on(table.chatId),
     modelIdIdx: index('message_model_id_idx').on(table.modelId),
   }),
@@ -228,7 +230,6 @@ export const otpTable = pgTable(
 export const userRelations = relations(userTable, ({ many }) => ({
   organizations: many(organizationTable),
   organizationUsers: many(organizationUsersTable),
-  messages: many(messageTable),
   feedbacks: many(feedbackTable),
 }))
 
@@ -294,9 +295,9 @@ export const llmModelRelations = relations(llmModelsTable, ({ many }) => ({
 }))
 
 export const messageRelations = relations(messageTable, ({ one }) => ({
-  user: one(userTable, {
-    fields: [messageTable.userId],
-    references: [userTable.id],
+  organization: one(organizationTable, {
+    fields: [messageTable.organizationId],
+    references: [organizationTable.id],
   }),
   chat: one(chatTable, {
     fields: [messageTable.chatId],
@@ -337,6 +338,7 @@ export const _relations = {
   llmModelRelations,
   messageRelations,
   feedbackRelations,
+  otpRelations,
 }
 
 export const tables = {
@@ -351,4 +353,5 @@ export const tables = {
   messageTable,
   feedbackTable,
   wishlistTable,
+  otpTable,
 }

@@ -129,7 +129,7 @@ function FormMessage({ className, ...props }: React.ComponentProps<'p'>) {
 
   return (
     <p data-slot="form-message" id={formMessageId} className={cn('text-destructive text-sm', className)} {...props}>
-      {body}
+      {body.toString().split('_').join(' ').toLowerCase().replace('zod', 'Value')}
     </p>
   )
 }

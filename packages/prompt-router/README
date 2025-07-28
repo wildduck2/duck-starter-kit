@@ -1,0 +1,74 @@
+Prompt Router
+=============
+
+Prompt Router is a minimal Python-based prompt classification system
+designed to intelligently route natural language input to appropriate
+processing modules. It provides a simple API over a trained
+machine learning model and is optimized for use in chat pipelines,
+language model orchestration, and intelligent dispatch systems.
+
+Features
+--------
+
+- Fast and lightweight prompt classification using scikit-learn
+- Easily trainable on custom CSV datasets
+- Flask-based HTTP API for prediction access
+- Supports model persistence (joblib)
+- Simple architecture and extensible design
+
+Project Layout
+--------------
+
+prompt-router/
+├── app.py                   - Flask API server
+├── requirements.txt         - Python package dependencies
+├── README                   - This file
+├── data/
+│   └── prompts.csv          - Sample prompt/label training data
+├── model/
+│   ├── classifier.py        - Model training and loading logic
+│   ├── classifier.joblib    - Trained classifier binary
+│   ├── predict.py           - Prediction interface
+│   ├── train.py             - Training script
+│   └── __pycache__/         - Byte-compiled Python cache files
+
+Quick Start
+-----------
+
+1. Create and activate a virtual environment:
+   $ python -m venv .venv
+   $ source .venv/bin/activate
+
+2. Install dependencies:
+   $ pip install -r requirements.txt
+
+3. Train the model:
+   $ python model/train.py
+
+4. Start the server:
+   $ python app.py
+
+5. Send classification requests:
+   POST /predict
+   JSON body:
+   {
+       "prompt": "Book me a flight to Cairo"
+   }
+
+   Response:
+   {
+       "label": "travel"
+   }
+
+Notes
+-----
+
+- Model training is based on `prompts.csv`, which must contain two columns: `prompt` and `label`.
+- You can retrain the model anytime with new data using `train.py`.
+- The trained model is saved as `classifier.joblib` and loaded by the server.
+
+License
+-------
+
+MIT License
+

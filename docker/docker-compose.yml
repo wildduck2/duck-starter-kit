@@ -9,46 +9,8 @@ services:
       dockerfile: apps/acme-server/Dockerfile
     ports:
       - '${PORT}:${PORT}'
-    environment:
-      # Project
-      COMPOSE_PROJECT_NAME: acme
-
-      # Backend
-      PORT: ${PORT}
-
-      # Database
-      DATABASE_URL: ${DATABASE_URL}
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: acme_db
-      POSTGRES_PORT: ${POSTGRES_PORT} 
-      POSTGRES_HOST_PORT: ${POSTGRES_HOST_PORT}
-
-      # Redis
-      REDIS_URL: ${REDIS_URL}
-      REDIS_PORT: ${REDIS_PORT} 
-      REDIS_HOST_PORT: ${REDIS_HOST_PORT} 
-
-      # Mail
-      MAIL_SERVICE: ${MAIL_SERVICE}
-      MAIL_HOST: ${MAIL_HOST}
-      MAIL_PORT: ${MAIL_PORT}
-      MAIL_USERNAME: ${MAIL_USERNAME}
-      MAIL_PASSWORD: ${MAIL_PASSWORD}
-      MAIL_FROM_ADDRESS: ${MAIL_FROM_ADDRESS}
-      MAIL_FROM_NAME: ${MAIL_FROM_NAME}
-      MAIL_SMTP_PORT: ${MAIL_SMTP_PORT} 
-      MAIL_UI_PORT: ${MAIL_UI_PORT} 
-
-      # MinIO
-      MINIO_ENDPOINT: ${MINIO_ENDPOINT}
-      MINIO_ACCESS_KEY: ${MINIO_ACCESS_KEY}
-      MINIO_SECRET_KEY: ${MINIO_SECRET_KEY}
-      MINIO_HOST_PORT: ${MINIO_HOST_PORT}
-      MINIO_CONSOLE_HOST_PORT: ${MINIO_CONSOLE_HOST_PORT} 
-
-      # Custom API Keys
-      PROMPTER_API_KEY: your-key-here
+    env_file:
+      - .env
     volumes:
       - ..:/app:cached
       - /app/apps/acme-server/node_modules
@@ -58,8 +20,6 @@ services:
     depends_on:
       - acme-postgres
       - acme-redis
-    networks:
-      - nest-net
 
   # --- PostgreSQL ---
   acme-postgres:
@@ -68,14 +28,10 @@ services:
     restart: always
     ports:
       - '${POSTGRES_HOST_PORT}:${POSTGRES_PORT}'
-    environment:
-      POSTGRES_USER: ${POSTGRES_USER}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-      POSTGRES_DB: ${POSTGRES_DB}
+    env_file:
+      - .env
     volumes:
       - postgres-dev-data:/var/lib/postgresql/data
-    networks:
-      - nest-net
 
   # --- Minio ---
   acme-minio:
@@ -85,13 +41,10 @@ services:
     ports:
       - "${MINIO_HOST_PORT}:9000"  # S3 API
       - "${MINIO_CONSOLE_HOST_PORT}:9001"  # Web Console
-    environment:
-      MINIO_ROOT_USER: minioadmin
-      MINIO_ROOT_PASSWORD: minioadmin
+    env_file:
+      - .env
     volumes:
       - minio-data:/data
-    networks:
-      - nest-net
 
   # --- Redis ---
   acme-redis:
@@ -100,8 +53,6 @@ services:
     restart: always
     ports:
       - '${REDIS_HOST_PORT}:${REDIS_PORT}'
-    networks:
-      - nest-net
 
   # --- Drizzle Studio ---
   acme-drizzle:
@@ -111,8 +62,8 @@ services:
       dockerfile: packages/db/Dockerfile
     ports:
       - '${DRIZZLE_PORT}:${DRIZZLE_PORT}'
-    environment:
-      DATABASE_URL: ${DATABASE_URL}
+    env_file:
+      - .env
     volumes:
       - ..:/app:cached
       - /app/packages/db/node_modules
@@ -121,8 +72,6 @@ services:
     depends_on:
       - acme-postgres
       - acme-redis
-    networks:
-      - nest-net
 
   # --- MailHog (Email testing server) ---
   acme-mailhog:
@@ -132,13 +81,9 @@ services:
     ports:
       - '${MAIL_SMTP_PORT}:1025'   # SMTP
       - '${MAIL_UI_PORT}:8025'     # Web UI
-    networks:
-      - nest-net
+    env_file:
+      - .env
 
 volumes:
   postgres-dev-data:
   minio-data:
-
-networks:
-  nest-net:
-    driver: bridge

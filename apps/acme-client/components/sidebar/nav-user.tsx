@@ -78,7 +78,7 @@ export function NavUser({
               </DropdownMenuItem>
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>
+            <DropdownMenuItem asChild>
               <Signout />
             </DropdownMenuItem>
           </DropdownMenuContent>

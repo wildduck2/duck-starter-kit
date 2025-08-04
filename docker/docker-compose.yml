@@ -10,9 +10,26 @@ services:
     ports:
       - '${PORT}:${PORT}'
     environment:
-      DATABASE_URL: ${DATABASE_URL}
-      REDIS_URL: ${REDIS_URL}
+      # Project
+      COMPOSE_PROJECT_NAME: acme
+
+      # Backend
       PORT: ${PORT}
+
+      # Database
+      DATABASE_URL: ${DATABASE_URL}
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: acme_db
+      POSTGRES_PORT: ${POSTGRES_PORT} 
+      POSTGRES_HOST_PORT: ${POSTGRES_HOST_PORT}
+
+      # Redis
+      REDIS_URL: ${REDIS_URL}
+      REDIS_PORT: ${REDIS_PORT} 
+      REDIS_HOST_PORT: ${REDIS_HOST_PORT} 
+
+      # Mail
       MAIL_SERVICE: ${MAIL_SERVICE}
       MAIL_HOST: ${MAIL_HOST}
       MAIL_PORT: ${MAIL_PORT}
@@ -20,10 +37,18 @@ services:
       MAIL_PASSWORD: ${MAIL_PASSWORD}
       MAIL_FROM_ADDRESS: ${MAIL_FROM_ADDRESS}
       MAIL_FROM_NAME: ${MAIL_FROM_NAME}
+      MAIL_SMTP_PORT: ${MAIL_SMTP_PORT} 
+      MAIL_UI_PORT: ${MAIL_UI_PORT} 
+
+      # MinIO
       MINIO_ENDPOINT: ${MINIO_ENDPOINT}
       MINIO_ACCESS_KEY: ${MINIO_ACCESS_KEY}
       MINIO_SECRET_KEY: ${MINIO_SECRET_KEY}
-      PROMPTER_API_KEY: ${PROMPTER_API_KEY}
+      MINIO_HOST_PORT: ${MINIO_HOST_PORT}
+      MINIO_CONSOLE_HOST_PORT: ${MINIO_CONSOLE_HOST_PORT} 
+
+      # Custom API Keys
+      PROMPTER_API_KEY: your-key-here
     volumes:
       - ..:/app:cached
       - /app/apps/acme-server/node_modules
@@ -49,6 +74,22 @@ services:
       POSTGRES_DB: ${POSTGRES_DB}
     volumes:
       - postgres-dev-data:/var/lib/postgresql/data
+    networks:
+      - nest-net
+
+  # --- Minio ---
+  acme-minio:
+    image: minio/minio:latest
+    container_name: ${COMPOSE_PROJECT_NAME}-minio-dev
+    command: server /data --console-address ":9001"
+    ports:
+      - "${MINIO_HOST_PORT}:9000"  # S3 API
+      - "${MINIO_CONSOLE_HOST_PORT}:9001"  # Web Console
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    volumes:
+      - minio-data:/data
     networks:
       - nest-net
 
@@ -96,6 +137,7 @@ services:
 
 volumes:
   postgres-dev-data:
+  minio-data:
 
 networks:
   nest-net:

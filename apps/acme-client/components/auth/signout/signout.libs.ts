@@ -4,7 +4,8 @@ import { ResponseType } from '~/server/common/types'
 
 export async function handleSignout(): Promise<ResponseType<null>> {
   try {
-    const { data } = await axios.get(process.env.NEXT_PUBLIC_API_URL + '/auth/signout', {
+    console.log('out')
+    const { data } = await axios.get(process.env.NEXT_PUBLIC_API_URL + '/v1/auth/signout', {
       withCredentials: true,
     })
 

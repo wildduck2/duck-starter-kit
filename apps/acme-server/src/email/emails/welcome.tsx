@@ -9,11 +9,11 @@ export function WelcomeEmail({ username }: WelcomeEmailProps) {
   return (
     <Html>
       <Head />
-      <Preview>The AI platform that helps you uncover qualified leads.</Preview>
+      <Preview>The acme platform that helps you uncover qualified leads.</Preview>
       <Body style={main}>
         <Container style={container}>
           <Img
-            src={'https://zpgqhogoevbgpxustvmo.supabase.co/storage/v1/object/public/produc_imgs//acme_1.png'}
+            src={'https://zpgqhogoevbgpxustvmo.supabase.co/storage/v1/object/public/duck//placeholder%20(copy%201).png'}
             width="120"
             height="60"
             alt="acme"

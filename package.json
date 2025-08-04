@@ -6,7 +6,7 @@
   "scripts": {
     "build": "turbo build",
     "front:dev": "docker-compose -f ./docker/docker-compose.yml up -d && pnpm run --filter=@acme/acme-client dev",
-    "back:dev": "docker-compose -f ./docker/docker-compose.yml up -d acme-mailhog acme-postgres acme-redis acme-drizzle && pnpm run --filter=@acme/acme-server start:dev",
+    "back:dev": "docker-compose -f ./docker/docker-compose.yml up -d acme-mailhog acme-postgres acme-redis acme-drizzle acme-minio && pnpm run --filter=@acme/acme-server start:dev",
     "docker:up": "docker-compose -f ./docker/docker-compose.yml up -d",
     "docker:down": "docker-compose -f ./docker/docker-compose.yml down",
     "clean": "rimraf dist .cache .turbo node_modules .next .velite",

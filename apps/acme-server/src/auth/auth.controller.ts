@@ -39,14 +39,23 @@ export class AuthController {
     @Body(new ZodValidationPipe(signinSchema)) body: SigninDto,
     @Session() session: SessionData,
   ): Promise<ResponseType<Awaited<ReturnType<typeof this.authService.signin>>, typeof AuthMessages>> {
-    const data = await this.authService.signin(body)
-    session.user = data!
-    // console.log(data)
+    try {
+      console.log(session)
+      const data = await this.authService.signin(body)
+      session.user = data!
+      // session = { ...session, user: data! }
 
-    return {
-      state: 'success',
-      data,
-      message: 'AUTH_SIGNIN_SUCCESS',
+      return {
+        state: 'success',
+        data,
+        message: 'AUTH_SIGNIN_SUCCESS',
+      }
+    } catch (error) {
+      console.log(error)
+      return {
+        state: 'error',
+        message: 'AUTH_SIGNIN_FAILED',
+      }
     }
   }
 

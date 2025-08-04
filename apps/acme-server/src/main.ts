@@ -1,6 +1,8 @@
 import { NestFactory } from '@nestjs/core'
 import { NestExpressApplication } from '@nestjs/platform-express'
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger'
+import { RedisStore } from 'connect-redis'
+import session from 'express-session'
 import { patchNestJsSwagger } from 'nestjs-zod'
 import { createClient } from 'redis'
 import { AppModule } from './app.module'
@@ -27,7 +29,19 @@ async function bootstrap() {
   })
   await redisClient.connect()
 
-  app.useWebSocketAdapter(new EventsAdapter(app, redisClient as never))
+  const _session = session({
+    store: new RedisStore({ client: redisClient, prefix: 'session:' }),
+    secret: process.env.SESSION_SECRET || 'keyboard cat',
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+      httpOnly: true,
+      secure: false, // true in production with HTTPS
+      maxAge: 1000 * 60 * 60 * 24, // 1 day
+    },
+  })
+  app.use(_session)
+  app.useWebSocketAdapter(new EventsAdapter(_session))
 
   // Swagger
   patchNestJsSwagger()

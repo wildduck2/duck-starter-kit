@@ -6,6 +6,7 @@ import { toast } from 'sonner'
 import { handleSignout } from './signout.libs'
 import { userAtom } from '../auth.atom'
 import { useSetAtom } from 'jotai'
+import { Button } from '@acme/ui/button'
 
 export function Signout() {
   const router = useRouter()
@@ -27,9 +28,9 @@ export function Signout() {
   })
 
   return (
-    <div onClick={() => mutate()} className="flex items-center gap-2">
+    <Button onClick={() => mutate()} variant="ghost" size="sm" className="flex items-center gap-2 justify-start w-full">
       <IconLogout />
       Log out
-    </div>
+    </Button>
   )
 }
